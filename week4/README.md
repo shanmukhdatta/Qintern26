@@ -1,6 +1,6 @@
 # Week 4 — QSVM/VQC Quantum ML for Malware Family Classification
 
-Assigned scope was Day 22–28. Work done extends beyond the assigned scope with **Version 3** (located in [`bonus_version3_local_kernel_xgboost/`](./bonus_version3_local_kernel_xgboost/)), achieving the overall best result of the project: **0.875 accuracy** (beating classical baselines by up to 20 points).
+Assigned scope was Day 22–28. Work done extends  with **Version 3** (located in [`bonus_version3_local_kernel_xgboost/`](./bonus_version3_local_kernel_xgboost/)), achieving the overall best result of the project: **0.875 accuracy** (beating classical baselines by up to 20 points).
 
 ---
 
