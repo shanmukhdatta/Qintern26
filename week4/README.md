@@ -1,5 +1,25 @@
 # Week 4 — QSVM/VQC Quantum ML for Malware Family Classification
 
+---
+
+## 📁 Folder Structure & Subdirectories
+
+- **[`bonus_version3_local_kernel_xgboost/`](./bonus_version3_local_kernel_xgboost/)**: Version 3 pipeline implementation (local trainable kernel, XGBoost feature selection, KTA training script, ablation studies, and full technical report).
+- **[`day22_ctgan_confirmation/`](./day22_ctgan_confirmation/)**: Traced and confirmed the 87% classical baseline accuracy (RandomForest on full CTGAN retrain data).
+- **[`day23_version1_smote_qsvm_vqc/`](./day23_version1_smote_qsvm_vqc/)**: Version 1 baseline pipeline, QSVM + VQC on SMOTE data ($n=200, n=1000$).
+- **[`day24-25_capacity_sweep/`](./day24-25_capacity_sweep/)**: Qubit capacity sweep analysis ($q=4$ vs $q=12$) demonstrating output-variance drop (3.4x) without accuracy gain.
+- **[`day26-27_version2_hybrid_pipeline/`](./day26-27_version2_hybrid_pipeline/)**: Version 2 pipeline (LDA+PCA hybrid, data re-uploading, Nyström kernel) and comprehensive 27-config three-way dataset comparison (SMOTE vs CTGAN vs Original).
+- **[`day28_writeup/`](./day28_writeup/)**: Final technical report, comprehensive Markdown summary tables, and full Jupyter notebooks.
+- **[`uploaded_source_files_and_datasets/`](./uploaded_source_files_and_datasets/)**: Complete raw dataset CSVs (`MalMem2022_SMOTE.csv`, `malmem_ctgan__1_.csv`, `malmem_original.csv`) and original uploaded scripts.
+
+---
+
+## 📝 Documented Notes & Logbooks
+- **[`WEEK_NOTES.md`](./WEEK_NOTES.md)**: Day-by-day task completion log and blockers going into next week.
+- **[`NOTION_NOTES.md`](./NOTION_NOTES.md)**: Raw research notes, mathematical insights, and literature adaptations.
+
+
+
 Assigned scope was Day 22–28. Work done extends  with **Version 3** (located in [`bonus_version3_local_kernel_xgboost/`](./bonus_version3_local_kernel_xgboost/)), achieving the overall best result of the project: **0.875 accuracy** (beating classical baselines by up to 20 points).
 
 ---
@@ -61,21 +81,3 @@ The diagram above details the step-by-step evolution of our Quantum Machine Lear
   | Global Kernel, No Alignment (v2) | `0.700` | - |
   | **Local Kernel + Alignment (v3)** | **`0.875`** | **`0.873`** |
 - **Conclusion**: Local kernel measurement + KTA alignment outperformed classical models on CTGAN data by up to **20 percentage points**.
-
----
-
-## 📁 Folder Structure & Subdirectories
-
-- **[`bonus_version3_local_kernel_xgboost/`](./bonus_version3_local_kernel_xgboost/)**: Version 3 pipeline implementation (local trainable kernel, XGBoost feature selection, KTA training script, ablation studies, and full technical report).
-- **[`day22_ctgan_confirmation/`](./day22_ctgan_confirmation/)**: Traced and confirmed the 87% classical baseline accuracy (RandomForest on full CTGAN retrain data).
-- **[`day23_version1_smote_qsvm_vqc/`](./day23_version1_smote_qsvm_vqc/)**: Version 1 baseline pipeline, QSVM + VQC on SMOTE data ($n=200, n=1000$).
-- **[`day24-25_capacity_sweep/`](./day24-25_capacity_sweep/)**: Qubit capacity sweep analysis ($q=4$ vs $q=12$) demonstrating output-variance drop (3.4x) without accuracy gain.
-- **[`day26-27_version2_hybrid_pipeline/`](./day26-27_version2_hybrid_pipeline/)**: Version 2 pipeline (LDA+PCA hybrid, data re-uploading, Nyström kernel) and comprehensive 27-config three-way dataset comparison (SMOTE vs CTGAN vs Original).
-- **[`day28_writeup/`](./day28_writeup/)**: Final technical report, comprehensive Markdown summary tables, and full Jupyter notebooks.
-- **[`uploaded_source_files_and_datasets/`](./uploaded_source_files_and_datasets/)**: Complete raw dataset CSVs (`MalMem2022_SMOTE.csv`, `malmem_ctgan__1_.csv`, `malmem_original.csv`) and original uploaded scripts.
-
----
-
-## 📝 Documented Notes & Logbooks
-- **[`WEEK_NOTES.md`](./WEEK_NOTES.md)**: Day-by-day task completion log and blockers going into next week.
-- **[`NOTION_NOTES.md`](./NOTION_NOTES.md)**: Raw research notes, mathematical insights, and literature adaptations.
