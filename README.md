@@ -1,24 +1,7 @@
-# Qintern'26 — Quantum Machine Learning Internship (2026)
+# Qintern'26
 
 Repository containing research, pipelines, notebooks, and technical reports for Quantum Machine Learning tasks.
 
-## Directory Structure
-
-```
-.
-├── README.md
-└── week4/
-    ├── README.md
-    ├── WEEK_NOTES.md
-    ├── NOTION_NOTES.md
-    ├── day22_ctgan_confirmation/
-    ├── day23_version1_smote_qsvm_vqc/
-    ├── day24-25_capacity_sweep/
-    ├── day26-27_version2_hybrid_pipeline/
-    ├── day28_writeup/
-    ├── bonus_version3_local_kernel_xgboost/
-    └── uploaded_source_files_and_datasets/
-```
 
 ## Week Highlights
 
