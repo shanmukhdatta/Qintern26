@@ -1,4 +1,4 @@
-# Day 32 — Master configuration comparison (Shanmukh)
+# Day 32 — Master configuration comparison
 
 **Task:** Consolidate the full configuration comparison (augmentation methods
 x classifier families x sample scales) into final master tables, checked for
