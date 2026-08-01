@@ -1,4 +1,5 @@
-# Day 32 — Master Configuration Comparison (Shanmukh)
+# Day 32 — Master Configuration Comparison
+
 
 ## Objective
 Consolidate the full configuration comparison — augmentation methods x

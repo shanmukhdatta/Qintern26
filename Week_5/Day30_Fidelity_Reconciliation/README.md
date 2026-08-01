@@ -1,10 +1,8 @@
-# Day 30 — Fidelity Metrics Reconciliation (Marco and Shanmukh)
+# Day 30 — Fidelity Metrics Reconciliation
 
 ## Objective
-Reconcile KS (Kolmogorov-Smirnov), Wasserstein distance, and MMD (Maximum
-Mean Discrepancy) across all four augmentation methods (Original, SMOTE,
-CTGAN, QGAN) into one final comparison table, now that QGAN's numbers have
-changed completely since Week 3's broken run.
+Reconcile KS (Kolmogorov-Smirnov), Wasserstein distance, and MMD (Maximum Mean Discrepancy) across all four augmentation methods (Original, SMOTE, CTGAN, QGAN) into one final comparison table, now that QGAN's numbers have changed completely since Week 3's broken run.
+
 
 ## Tasks Performed
 - Separated real rows from synthetic rows for SMOTE and CTGAN (same
