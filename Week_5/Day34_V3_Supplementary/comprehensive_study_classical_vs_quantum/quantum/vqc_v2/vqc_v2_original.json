@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "model": "vqc",
+      "version": "v2",
+      "dataset": "original",
+      "n_qubits": 12,
+      "n_total": 500,
+      "seed": 7,
+      "result": {
+        "acc": 0.3933333333333333,
+        "f1_macro": 0.390311986863711,
+        "time_s": 52.8,
+        "epochs": 15,
+        "n_train_used": 140
+      },
+      "classical_svm_same_features": {
+        "acc": 0.4666666666666667,
+        "f1_macro": 0.465152841259036
+      },
+      "classical_rf_same_features": {
+        "acc": 0.5133333333333333,
+        "f1_macro": 0.5109005754047906
+      }
+    }
+  ]
+}

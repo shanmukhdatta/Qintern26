@@ -1,0 +1,50 @@
+{
+  "runs": [
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "smote",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 7,
+      "result": {
+        "acc": 0.35,
+        "f1_macro": 0.34084942640342364,
+        "align_time_s": 5.2,
+        "kernel_time_s": 138.9,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.46,
+        "f1_macro": 0.4357071736759755
+      },
+      "classical_rf_same_features": {
+        "acc": 0.52,
+        "f1_macro": 0.5189290361325193
+      }
+    },
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "smote",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 1,
+      "result": {
+        "acc": 0.6,
+        "f1_macro": 0.5961038961038961,
+        "align_time_s": 6.3,
+        "kernel_time_s": 113.7,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.5266666666666666,
+        "f1_macro": 0.5194364491086262
+      },
+      "classical_rf_same_features": {
+        "acc": 0.5066666666666667,
+        "f1_macro": 0.5060177917320775
+      }
+    }
+  ]
+}

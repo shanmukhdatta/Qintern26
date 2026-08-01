@@ -1,0 +1,6 @@
+[QGAN][xgboost] q=8   seed=42  C=1.0 synth_frac=0.339 | clSVM=0.500 clRF=0.475 | QSVM_v3=0.525 f1=0.524
+[QGAN][xgboost] q=8   seed=1   C=1.0 synth_frac=0.361 | clSVM=0.425 clRF=0.500 | QSVM_v3=0.550 f1=0.542
+[QGAN][xgboost] q=8   seed=42  C=1.0 synth_frac=0.339 | clSVM=0.500 clRF=0.475 | QSVM_v3=0.525 f1=0.524
+[QGAN][xgboost] q=8   seed=1   C=1.0 synth_frac=0.361 | clSVM=0.425 clRF=0.500 | QSVM_v3=0.550 f1=0.542
+[QGAN][xgboost] q=8   seed=7   C=1.0 synth_frac=0.337 | clSVM=0.500 clRF=0.450 | QSVM_v3=0.625 f1=0.616
+[QGAN][xgboost] q=8   seed=7   C=1.0 synth_frac=0.337 | clSVM=0.500 clRF=0.450 | QSVM_v3=0.625 f1=0.616

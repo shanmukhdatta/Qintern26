@@ -1,0 +1,29 @@
+{
+  "dataset": "smote",
+  "n_total": 500,
+  "n_train": 348,
+  "n_test": 150,
+  "n_features_used": 28,
+  "lightgbm": {
+    "best_params": {
+      "num_leaves": 31,
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.05
+    },
+    "acc": 0.5066666666666667,
+    "f1_macro": 0.5084364928767205,
+    "search_time_s": 1.9
+  },
+  "random_forest": {
+    "best_params": {
+      "n_estimators": 200,
+      "min_samples_split": 2,
+      "max_features": "sqrt",
+      "max_depth": null
+    },
+    "acc": 0.4666666666666667,
+    "f1_macro": 0.4579371822362477,
+    "search_time_s": 10.7
+  }
+}

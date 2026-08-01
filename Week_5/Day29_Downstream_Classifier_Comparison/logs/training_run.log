@@ -1,0 +1,329 @@
+2026-07-29 08:37:43,891 [INFO] ======================================================================
+2026-07-29 08:37:43,891 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 08:37:43,891 [INFO] ======================================================================
+2026-07-29 08:37:43,891 [INFO] Loading data...
+2026-07-29 08:37:45,302 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 08:37:45,312 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 08:37:45,312 [INFO] Target sample count per malware class: 10020
+2026-07-29 08:37:45,527 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 08:37:45,527 [INFO]   Already at/above target; skipping generation.
+2026-07-29 08:37:45,527 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 08:39:19,495 [INFO]   [Ransomware] checkpoint saved @ epoch 5/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 08:40:52,853 [INFO]   [Ransomware] epoch 10/100 d_loss=1.3752 g_loss=0.7899 (187.2s elapsed)
+2026-07-29 08:40:52,854 [INFO]   [Ransomware] checkpoint saved @ epoch 10/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 08:42:31,585 [INFO] ======================================================================
+2026-07-29 08:42:31,585 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 08:42:31,585 [INFO] ======================================================================
+2026-07-29 08:42:31,585 [INFO] Loading data...
+2026-07-29 08:42:32,218 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 08:42:32,227 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 08:42:32,227 [INFO] Target sample count per malware class: 10020
+2026-07-29 08:42:32,356 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 08:42:32,356 [INFO]   Already at/above target; skipping generation.
+2026-07-29 08:42:32,357 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 08:42:32,417 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 11/100 (760 batch-steps already logged)
+2026-07-29 08:44:01,213 [INFO]   [Ransomware] checkpoint saved @ epoch 15/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 08:45:28,941 [INFO]   [Ransomware] epoch 20/100 d_loss=1.3282 g_loss=0.8183 (176.5s elapsed)
+2026-07-29 08:45:28,942 [INFO]   [Ransomware] checkpoint saved @ epoch 20/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 08:46:59,529 [INFO]   [Ransomware] checkpoint saved @ epoch 25/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 08:47:23,705 [INFO] ======================================================================
+2026-07-29 08:47:23,705 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 08:47:23,705 [INFO] ======================================================================
+2026-07-29 08:47:23,705 [INFO] Loading data...
+2026-07-29 08:47:24,364 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 08:47:24,373 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 08:47:24,373 [INFO] Target sample count per malware class: 10020
+2026-07-29 08:47:24,499 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 08:47:24,499 [INFO]   Already at/above target; skipping generation.
+2026-07-29 08:47:24,499 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 08:47:24,597 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 26/100 (1900 batch-steps already logged)
+2026-07-29 08:48:55,556 [INFO]   [Ransomware] epoch 30/100 d_loss=1.3539 g_loss=0.8308 (91.0s elapsed)
+2026-07-29 08:48:55,557 [INFO]   [Ransomware] checkpoint saved @ epoch 30/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 08:50:26,594 [INFO]   [Ransomware] checkpoint saved @ epoch 35/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 08:51:55,505 [INFO]   [Ransomware] epoch 40/100 d_loss=1.3538 g_loss=0.8308 (270.9s elapsed)
+2026-07-29 08:51:55,507 [INFO]   [Ransomware] checkpoint saved @ epoch 40/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 11:42:22,087 [INFO] ======================================================================
+2026-07-29 11:42:22,088 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 11:42:22,088 [INFO] ======================================================================
+2026-07-29 11:42:22,088 [INFO] Loading data...
+2026-07-29 11:42:23,668 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 11:42:23,680 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 11:42:23,680 [INFO] Target sample count per malware class: 10020
+2026-07-29 11:42:23,853 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 11:42:23,854 [INFO]   Already at/above target; skipping generation.
+2026-07-29 11:42:23,854 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 11:42:23,944 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 41/100 (3040 batch-steps already logged)
+2026-07-29 11:44:11,958 [INFO] ======================================================================
+2026-07-29 11:44:11,964 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 11:44:11,964 [INFO] ======================================================================
+2026-07-29 11:44:11,964 [INFO] Loading data...
+2026-07-29 11:44:13,647 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 11:44:13,668 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 11:44:13,669 [INFO] Target sample count per malware class: 10020
+2026-07-29 11:44:13,906 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 11:44:13,906 [INFO]   Already at/above target; skipping generation.
+2026-07-29 11:44:13,906 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 11:44:14,104 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 41/100 (3040 batch-steps already logged)
+2026-07-29 11:45:16,534 [INFO]   [Ransomware] checkpoint saved @ epoch 45/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 11:47:53,365 [INFO]   [Ransomware] checkpoint saved @ epoch 45/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 11:49:06,905 [INFO] ======================================================================
+2026-07-29 11:49:06,905 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 11:49:06,905 [INFO] ======================================================================
+2026-07-29 11:49:06,905 [INFO] Loading data...
+2026-07-29 11:49:07,980 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 11:49:07,994 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 11:49:07,994 [INFO] Target sample count per malware class: 10020
+2026-07-29 11:49:08,205 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 11:49:08,205 [INFO]   Already at/above target; skipping generation.
+2026-07-29 11:49:08,205 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 11:49:08,343 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 46/100 (3420 batch-steps already logged)
+2026-07-29 11:51:20,766 [INFO]   [Ransomware] epoch 50/100 d_loss=1.3572 g_loss=0.8208 (132.4s elapsed)
+2026-07-29 11:51:20,770 [INFO]   [Ransomware] checkpoint saved @ epoch 50/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 11:53:32,486 [INFO]   [Ransomware] checkpoint saved @ epoch 55/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 11:54:08,959 [INFO] ======================================================================
+2026-07-29 11:54:08,959 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 11:54:08,959 [INFO] ======================================================================
+2026-07-29 11:54:08,959 [INFO] Loading data...
+2026-07-29 11:54:09,485 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 11:54:09,496 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 11:54:09,496 [INFO] Target sample count per malware class: 10020
+2026-07-29 11:54:09,676 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 11:54:09,676 [INFO]   Already at/above target; skipping generation.
+2026-07-29 11:54:09,677 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 11:54:09,745 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 56/100 (4180 batch-steps already logged)
+2026-07-29 11:56:24,777 [INFO]   [Ransomware] epoch 60/100 d_loss=1.3336 g_loss=0.8810 (135.0s elapsed)
+2026-07-29 11:56:24,779 [INFO]   [Ransomware] checkpoint saved @ epoch 60/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 11:58:46,915 [INFO]   [Ransomware] checkpoint saved @ epoch 65/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 11:59:10,454 [INFO] ======================================================================
+2026-07-29 11:59:10,455 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 11:59:10,455 [INFO] ======================================================================
+2026-07-29 11:59:10,455 [INFO] Loading data...
+2026-07-29 11:59:11,504 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 11:59:11,521 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 11:59:11,522 [INFO] Target sample count per malware class: 10020
+2026-07-29 11:59:11,753 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 11:59:11,753 [INFO]   Already at/above target; skipping generation.
+2026-07-29 11:59:11,753 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 11:59:11,894 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 66/100 (4940 batch-steps already logged)
+2026-07-29 12:01:29,729 [INFO]   [Ransomware] epoch 70/100 d_loss=1.2956 g_loss=0.8989 (137.8s elapsed)
+2026-07-29 12:01:29,732 [INFO]   [Ransomware] checkpoint saved @ epoch 70/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 12:03:51,736 [INFO]   [Ransomware] checkpoint saved @ epoch 75/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 14:28:54,653 [INFO] ======================================================================
+2026-07-29 14:28:54,654 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 14:28:54,654 [INFO] ======================================================================
+2026-07-29 14:28:54,654 [INFO] Loading data...
+2026-07-29 14:28:55,731 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 14:28:55,738 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 14:28:55,738 [INFO] Target sample count per malware class: 10020
+2026-07-29 14:28:55,843 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 14:28:55,843 [INFO]   Already at/above target; skipping generation.
+2026-07-29 14:28:55,843 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 14:28:55,904 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 76/100 (5700 batch-steps already logged)
+2026-07-29 14:30:11,294 [INFO]   [Ransomware] epoch 80/100 d_loss=1.2614 g_loss=0.9064 (75.4s elapsed)
+2026-07-29 14:30:11,297 [INFO]   [Ransomware] checkpoint saved @ epoch 80/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 14:31:24,187 [INFO]   [Ransomware] checkpoint saved @ epoch 85/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 14:32:37,043 [INFO]   [Ransomware] epoch 90/100 d_loss=1.2648 g_loss=1.0400 (221.1s elapsed)
+2026-07-29 14:32:37,044 [INFO]   [Ransomware] checkpoint saved @ epoch 90/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 14:33:36,585 [INFO] ======================================================================
+2026-07-29 14:33:36,585 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 14:33:36,585 [INFO] ======================================================================
+2026-07-29 14:33:36,585 [INFO] Loading data...
+2026-07-29 14:33:37,003 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 14:33:37,009 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 14:33:37,010 [INFO] Target sample count per malware class: 10020
+2026-07-29 14:33:37,102 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 14:33:37,102 [INFO]   Already at/above target; skipping generation.
+2026-07-29 14:33:37,102 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 14:33:37,153 [INFO]   [Ransomware] RESUMED from checkpoint: starting at epoch 91/100 (6840 batch-steps already logged)
+2026-07-29 14:34:50,739 [INFO]   [Ransomware] checkpoint saved @ epoch 95/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 14:36:05,079 [INFO]   [Ransomware] epoch 100/100 d_loss=1.1223 g_loss=1.1859 (147.9s elapsed)
+2026-07-29 14:36:05,080 [INFO]   [Ransomware] checkpoint saved @ epoch 100/100 -> /home/claude/qgan_work/checkpoints/Ransomware_ckpt.pkl
+2026-07-29 14:36:05,080 [INFO]   Trained in 147.9s
+2026-07-29 14:36:05,609 [INFO]   [Ransomware] cached finished synthetic output -> /home/claude/qgan_work/outputs/partial_synth_Ransomware.csv
+2026-07-29 14:36:05,610 [INFO] 
+=== Trojan: n_real=9487, n_needed=533 ===
+2026-07-29 14:37:15,170 [INFO]   [Trojan] checkpoint saved @ epoch 5/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:38:30,119 [INFO] ======================================================================
+2026-07-29 14:38:30,119 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 14:38:30,119 [INFO] ======================================================================
+2026-07-29 14:38:30,119 [INFO] Loading data...
+2026-07-29 14:38:30,474 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 14:38:30,481 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 14:38:30,481 [INFO] Target sample count per malware class: 10020
+2026-07-29 14:38:30,566 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 14:38:30,566 [INFO]   Already at/above target; skipping generation.
+2026-07-29 14:38:30,566 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 14:38:30,566 [INFO]   [Ransomware] found completed cache from a previous run -> loading, skipping retrain.
+2026-07-29 14:38:30,575 [INFO] 
+=== Trojan: n_real=9487, n_needed=533 ===
+2026-07-29 14:38:30,609 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 6/100 (370 batch-steps already logged)
+2026-07-29 14:39:42,849 [INFO]   [Trojan] epoch 10/100 d_loss=1.3726 g_loss=0.7849 (72.2s elapsed)
+2026-07-29 14:39:42,849 [INFO]   [Trojan] checkpoint saved @ epoch 10/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:40:54,833 [INFO]   [Trojan] checkpoint saved @ epoch 15/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:42:08,742 [INFO]   [Trojan] epoch 20/100 d_loss=1.3598 g_loss=0.8009 (218.1s elapsed)
+2026-07-29 14:42:08,745 [INFO]   [Trojan] checkpoint saved @ epoch 20/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:43:23,397 [INFO] ======================================================================
+2026-07-29 14:43:23,398 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 14:43:23,398 [INFO] ======================================================================
+2026-07-29 14:43:23,398 [INFO] Loading data...
+2026-07-29 14:43:23,741 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 14:43:23,748 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 14:43:23,748 [INFO] Target sample count per malware class: 10020
+2026-07-29 14:43:23,824 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 14:43:23,824 [INFO]   Already at/above target; skipping generation.
+2026-07-29 14:43:23,824 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 14:43:23,824 [INFO]   [Ransomware] found completed cache from a previous run -> loading, skipping retrain.
+2026-07-29 14:43:23,833 [INFO] 
+=== Trojan: n_real=9487, n_needed=533 ===
+2026-07-29 14:43:23,869 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 21/100 (1480 batch-steps already logged)
+2026-07-29 14:44:35,518 [INFO]   [Trojan] checkpoint saved @ epoch 25/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:45:47,128 [INFO]   [Trojan] epoch 30/100 d_loss=1.3631 g_loss=0.8063 (143.3s elapsed)
+2026-07-29 14:45:47,129 [INFO]   [Trojan] checkpoint saved @ epoch 30/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:46:59,688 [INFO]   [Trojan] checkpoint saved @ epoch 35/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:48:10,920 [INFO]   [Trojan] epoch 40/100 d_loss=1.3503 g_loss=0.8007 (287.1s elapsed)
+2026-07-29 14:48:10,921 [INFO]   [Trojan] checkpoint saved @ epoch 40/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:48:16,404 [INFO] ======================================================================
+2026-07-29 14:48:16,404 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 14:48:16,404 [INFO] ======================================================================
+2026-07-29 14:48:16,404 [INFO] Loading data...
+2026-07-29 14:48:16,680 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 14:48:16,687 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 14:48:16,687 [INFO] Target sample count per malware class: 10020
+2026-07-29 14:48:16,771 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 14:48:16,771 [INFO]   Already at/above target; skipping generation.
+2026-07-29 14:48:16,771 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 14:48:16,772 [INFO]   [Ransomware] found completed cache from a previous run -> loading, skipping retrain.
+2026-07-29 14:48:16,778 [INFO] 
+=== Trojan: n_real=9487, n_needed=533 ===
+2026-07-29 14:48:16,806 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 41/100 (2960 batch-steps already logged)
+2026-07-29 14:49:28,323 [INFO]   [Trojan] checkpoint saved @ epoch 45/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:50:39,150 [INFO]   [Trojan] epoch 50/100 d_loss=1.3370 g_loss=0.8308 (142.3s elapsed)
+2026-07-29 14:50:39,151 [INFO]   [Trojan] checkpoint saved @ epoch 50/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:51:50,527 [INFO]   [Trojan] checkpoint saved @ epoch 55/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:53:01,537 [INFO]   [Trojan] epoch 60/100 d_loss=1.3599 g_loss=0.8124 (284.7s elapsed)
+2026-07-29 14:53:01,538 [INFO]   [Trojan] checkpoint saved @ epoch 60/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:53:08,747 [INFO] ======================================================================
+2026-07-29 14:53:08,747 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 14:53:08,747 [INFO] ======================================================================
+2026-07-29 14:53:08,747 [INFO] Loading data...
+2026-07-29 14:53:09,038 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 14:53:09,044 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 14:53:09,044 [INFO] Target sample count per malware class: 10020
+2026-07-29 14:53:09,121 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 14:53:09,121 [INFO]   Already at/above target; skipping generation.
+2026-07-29 14:53:09,121 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 14:53:09,121 [INFO]   [Ransomware] found completed cache from a previous run -> loading, skipping retrain.
+2026-07-29 14:53:09,126 [INFO] 
+=== Trojan: n_real=9487, n_needed=533 ===
+2026-07-29 14:53:09,142 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 61/100 (4440 batch-steps already logged)
+2026-07-29 14:54:21,129 [INFO]   [Trojan] checkpoint saved @ epoch 65/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:55:35,363 [INFO]   [Trojan] epoch 70/100 d_loss=1.3317 g_loss=0.8358 (146.2s elapsed)
+2026-07-29 14:55:35,366 [INFO]   [Trojan] checkpoint saved @ epoch 70/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:56:48,290 [INFO]   [Trojan] checkpoint saved @ epoch 75/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 14:58:01,295 [INFO] ======================================================================
+2026-07-29 14:58:01,295 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 14:58:01,295 [INFO] ======================================================================
+2026-07-29 14:58:01,295 [INFO] Loading data...
+2026-07-29 14:58:01,644 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 14:58:01,651 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 14:58:01,651 [INFO] Target sample count per malware class: 10020
+2026-07-29 14:58:01,738 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 14:58:01,738 [INFO]   Already at/above target; skipping generation.
+2026-07-29 14:58:01,738 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 14:58:01,738 [INFO]   [Ransomware] found completed cache from a previous run -> loading, skipping retrain.
+2026-07-29 14:58:01,744 [INFO] 
+=== Trojan: n_real=9487, n_needed=533 ===
+2026-07-29 14:58:01,765 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 76/100 (5550 batch-steps already logged)
+2026-07-29 14:59:14,289 [INFO]   [Trojan] epoch 80/100 d_loss=1.3357 g_loss=0.9006 (72.5s elapsed)
+2026-07-29 14:59:14,291 [INFO]   [Trojan] checkpoint saved @ epoch 80/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 15:00:00,116 [INFO] ======================================================================
+2026-07-29 15:00:00,117 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 15:00:00,118 [INFO] ======================================================================
+2026-07-29 15:00:00,118 [INFO] Loading data...
+2026-07-29 15:00:00,887 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 15:00:00,903 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 15:00:00,903 [INFO] Target sample count per malware class: 10020
+2026-07-29 15:00:01,149 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 15:00:01,149 [INFO]   Already at/above target; skipping generation.
+2026-07-29 15:00:01,150 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 15:00:01,150 [INFO]   [Ransomware] found completed cache from a previous run -> loading, skipping retrain.
+2026-07-29 15:00:01,167 [INFO] 
+=== Trojan: n_real=9487, n_needed=533 ===
+2026-07-29 15:00:01,235 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 81/100 (5920 batch-steps already logged)
+2026-07-29 15:01:02,064 [INFO]   [Trojan] checkpoint saved @ epoch 85/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 15:02:37,181 [INFO]   [Trojan] checkpoint saved @ epoch 85/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 15:03:53,904 [INFO]   [Trojan] epoch 90/100 d_loss=1.3256 g_loss=0.8501 (232.7s elapsed)
+2026-07-29 15:03:53,905 [INFO]   [Trojan] checkpoint saved @ epoch 90/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 15:04:53,415 [INFO] ======================================================================
+2026-07-29 15:04:53,415 [INFO] PIPELINE START (or RESUME) — EPOCHS=100, N_VARIATIONAL_LAYERS=4, CHECKPOINT_EVERY=5
+2026-07-29 15:04:53,415 [INFO] ======================================================================
+2026-07-29 15:04:53,415 [INFO] Loading data...
+2026-07-29 15:04:53,805 [INFO] Loaded 58596 rows, 55 numeric features.
+2026-07-29 15:04:53,813 [INFO] Classes to augment (3): ['Spyware', 'Ransomware', 'Trojan']
+2026-07-29 15:04:53,813 [INFO] Target sample count per malware class: 10020
+2026-07-29 15:04:53,905 [INFO] 
+=== Spyware: n_real=10020, n_needed=0 ===
+2026-07-29 15:04:53,905 [INFO]   Already at/above target; skipping generation.
+2026-07-29 15:04:53,905 [INFO] 
+=== Ransomware: n_real=9791, n_needed=229 ===
+2026-07-29 15:04:53,905 [INFO]   [Ransomware] found completed cache from a previous run -> loading, skipping retrain.
+2026-07-29 15:04:53,914 [INFO] 
+=== Trojan: n_real=9487, n_needed=533 ===
+2026-07-29 15:04:53,946 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 91/100 (6660 batch-steps already logged)
+2026-07-29 15:06:08,301 [INFO]   [Trojan] checkpoint saved @ epoch 95/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 15:07:22,613 [INFO]   [Trojan] epoch 100/100 d_loss=1.2637 g_loss=0.9280 (148.7s elapsed)
+2026-07-29 15:07:22,614 [INFO]   [Trojan] checkpoint saved @ epoch 100/100 -> /home/claude/qgan_work/checkpoints/Trojan_ckpt.pkl
+2026-07-29 15:07:22,614 [INFO]   Trained in 148.7s
+2026-07-29 15:07:25,855 [INFO]   [Trojan] cached finished synthetic output -> /home/claude/qgan_work/outputs/partial_synth_Trojan.csv
+2026-07-29 15:07:25,855 [INFO] 
+Assembling augmented dataset...
+2026-07-29 15:07:27,097 [INFO] Saved augmented CSV -> /home/claude/qgan_work/outputs/malmem_qgan_augmented.csv (59358 rows)
+2026-07-29 15:07:27,099 [INFO] Saved fidelity metrics -> /home/claude/qgan_work/outputs/fidelity_metrics.csv
+2026-07-29 15:07:27,103 [INFO] 
+     class  n_real  n_synth  KS_median   KS_p75  Wasserstein_median  Wasserstein_p75      MMD
+Ransomware     229      229   0.327511 0.451965            0.664296         7.367828 0.162789
+    Trojan     533      533   0.292683 0.457786            0.871224         2.698666 0.342211
+2026-07-29 15:07:27,103 [INFO] 
+Running downstream classifier comparison (this trains 8 models)...
+2026-07-29 15:08:38,211 [INFO] Saved downstream results -> /home/claude/qgan_work/outputs/downstream_classifier_results.csv
+2026-07-29 15:08:38,213 [INFO] 
+  classifier  accuracy_original  f1_macro_original  accuracy_qgan_augmented  f1_macro_qgan_augmented
+RandomForest           0.875555           0.812713                 0.875077                 0.812105
+     XGBoost           0.881357           0.821130                 0.880538                 0.819961
+    LightGBM           0.875828           0.812894                 0.874462                 0.810814
+         SVM           0.744010           0.608942                 0.742098                 0.603902
+2026-07-29 15:08:38,213 [INFO] 
+Total pipeline time this run: 224.8s
+2026-07-29 15:08:38,213 [INFO] PIPELINE COMPLETE — writing DONE marker.

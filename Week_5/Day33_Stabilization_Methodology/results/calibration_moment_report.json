@@ -1,0 +1,44 @@
+{
+  "Ransomware": {
+    "uncalibrated": {
+      "mean_abs_diff": 0.007746214278246573,
+      "std_abs_diff": 0.030570174600652814
+    },
+    "diagonal_calibrated": {
+      "mean_abs_diff": 1.596875901904331e-17,
+      "std_abs_diff": 2.074728078314131e-08
+    },
+    "full_calibrated": {
+      "mean_abs_diff": 2.616343976677968e-17,
+      "std_abs_diff": 0.0003227650718119835
+    }
+  },
+  "Trojan": {
+    "uncalibrated": {
+      "mean_abs_diff": 0.0052936606029953814,
+      "std_abs_diff": 0.017403421070753693
+    },
+    "diagonal_calibrated": {
+      "mean_abs_diff": 5.515045631848181e-18,
+      "std_abs_diff": 1.4874156976698213e-08
+    },
+    "full_calibrated": {
+      "mean_abs_diff": 6.4200690585366816e-18,
+      "std_abs_diff": 0.00015811871467559754
+    }
+  },
+  "Spyware": {
+    "uncalibrated": {
+      "mean_abs_diff": 0.007701337668202989,
+      "std_abs_diff": 0.0380440478728487
+    },
+    "diagonal_calibrated": {
+      "mean_abs_diff": 2.9571920263932754e-17,
+      "std_abs_diff": 2.8382616829719653e-08
+    },
+    "full_calibrated": {
+      "mean_abs_diff": 3.110918793675469e-17,
+      "std_abs_diff": 0.0003415829640143105
+    }
+  }
+}

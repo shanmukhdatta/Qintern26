@@ -1,0 +1,26 @@
+{
+  "runs": [
+    {
+      "model": "qsvm",
+      "version": "v2",
+      "dataset": "smote",
+      "n_qubits": 12,
+      "n_total": 500,
+      "seed": 7,
+      "result": {
+        "acc": 0.4,
+        "f1_macro": 0.38918597742127153,
+        "time_s": 89.3,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.4666666666666667,
+        "f1_macro": 0.46261168046248846
+      },
+      "classical_rf_same_features": {
+        "acc": 0.5066666666666667,
+        "f1_macro": 0.5004346182917612
+      }
+    }
+  ]
+}

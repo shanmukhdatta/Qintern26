@@ -1,0 +1,119 @@
+{
+  "runs": [
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "qgan",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 7,
+      "result": {
+        "acc": 0.625,
+        "f1_macro": 0.6156003883914122,
+        "align_time_s": 4.3,
+        "kernel_time_s": 151.1,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.5533333333333333,
+        "f1_macro": 0.5197132616487455
+      },
+      "classical_rf_same_features": {
+        "acc": 0.5866666666666667,
+        "f1_macro": 0.586907357402407
+      }
+    },
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "qgan",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 1,
+      "result": {
+        "acc": 0.55,
+        "f1_macro": 0.5421888053467,
+        "align_time_s": 4.3,
+        "kernel_time_s": 107.1,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.5466666666666666,
+        "f1_macro": 0.5397572362278245
+      },
+      "classical_rf_same_features": {
+        "acc": 0.58,
+        "f1_macro": 0.5799915821541669
+      }
+    },
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "qgan",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 42,
+      "result": {
+        "acc": 0.525,
+        "f1_macro": 0.5238095238095238,
+        "align_time_s": 4.4,
+        "kernel_time_s": 125.2,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.5533333333333333,
+        "f1_macro": 0.553108372061696
+      },
+      "classical_rf_same_features": {
+        "acc": 0.5933333333333334,
+        "f1_macro": 0.5924602838794258
+      }
+    },
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "qgan",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 100,
+      "result": {
+        "acc": 0.475,
+        "f1_macro": 0.4622651637144391,
+        "align_time_s": 4.4,
+        "kernel_time_s": 114.9,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.5866666666666667,
+        "f1_macro": 0.5606981455508805
+      },
+      "classical_rf_same_features": {
+        "acc": 0.58,
+        "f1_macro": 0.5777039675662955
+      }
+    },
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "qgan",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 123,
+      "result": {
+        "acc": 0.525,
+        "f1_macro": 0.5149755018176071,
+        "align_time_s": 4.1,
+        "kernel_time_s": 153.8,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.5666666666666667,
+        "f1_macro": 0.5347929183689818
+      },
+      "classical_rf_same_features": {
+        "acc": 0.58,
+        "f1_macro": 0.5814416567104739
+      }
+    }
+  ]
+}

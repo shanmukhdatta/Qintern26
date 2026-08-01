@@ -1,0 +1,895 @@
+{
+  "runs": [
+    {
+      "dataset": "smote",
+      "n_total": 250,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.35,
+        "f1_macro": 0.34543209876543207
+      },
+      "classical_rf": {
+        "acc": 0.425,
+        "f1_macro": 0.4247863247863248
+      },
+      "qsvm_v2": {
+        "acc": 0.4,
+        "f1_macro": 0.39999999999999997,
+        "time_s": 60.033645153045654,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.3466666666666667,
+        "f1_macro": 0.3439106880967346,
+        "time_s": 37.40757751464844,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 250,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.725,
+        "f1_macro": 0.7222222222222222
+      },
+      "classical_rf": {
+        "acc": 0.675,
+        "f1_macro": 0.6603174603174603
+      },
+      "qsvm_v2": {
+        "acc": 0.7,
+        "f1_macro": 0.7018518518518518,
+        "time_s": 44.353984117507935,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.6266666666666667,
+        "f1_macro": 0.6039781297134238,
+        "time_s": 39.29745078086853,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 250,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.45,
+        "f1_macro": 0.4518871252204586
+      },
+      "classical_rf": {
+        "acc": 0.45,
+        "f1_macro": 0.441884280593958
+      },
+      "qsvm_v2": {
+        "acc": 0.375,
+        "f1_macro": 0.3428571428571428,
+        "time_s": 45.027395725250244,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.38666666666666666,
+        "f1_macro": 0.3865839243498818,
+        "time_s": 39.57845330238342,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "smote",
+      "n_total": 500,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.5,
+        "f1_macro": 0.479912424740011
+      },
+      "classical_rf": {
+        "acc": 0.35,
+        "f1_macro": 0.3444018731375053
+      },
+      "qsvm_v2": {
+        "acc": 0.425,
+        "f1_macro": 0.4236702988456144,
+        "time_s": 68.78184199333191,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.4266666666666667,
+        "f1_macro": 0.41125961678648953,
+        "time_s": 45.48386573791504,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "smote",
+      "n_total": 250,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.325,
+        "f1_macro": 0.3238366571699905
+      },
+      "classical_rf": {
+        "acc": 0.375,
+        "f1_macro": 0.3684380032206119
+      },
+      "qsvm_v2": {
+        "acc": 0.4,
+        "f1_macro": 0.379047619047619,
+        "time_s": 52.53993010520935,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.4,
+        "f1_macro": 0.39290339290339293,
+        "time_s": 49.13370108604431,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "smote",
+      "n_total": 250,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.35,
+        "f1_macro": 0.3494729907773386
+      },
+      "classical_rf": {
+        "acc": 0.35,
+        "f1_macro": 0.3478075776926351
+      },
+      "qsvm_v2": {
+        "acc": 0.375,
+        "f1_macro": 0.3500363108206246,
+        "time_s": 60.87330222129822,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.21333333333333335,
+        "f1_macro": 0.20787825011427497,
+        "time_s": 63.75518989562988,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "smote",
+      "n_total": 500,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.5,
+        "f1_macro": 0.479912424740011
+      },
+      "classical_rf": {
+        "acc": 0.375,
+        "f1_macro": 0.37456271864067964
+      },
+      "qsvm_v2": {
+        "acc": 0.425,
+        "f1_macro": 0.4248946955093882,
+        "time_s": 77.14600849151611,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.36,
+        "f1_macro": 0.3128378378378378,
+        "time_s": 57.31641173362732,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "smote",
+      "n_total": 500,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.5,
+        "f1_macro": 0.479912424740011
+      },
+      "classical_rf": {
+        "acc": 0.375,
+        "f1_macro": 0.3720996644534875
+      },
+      "qsvm_v2": {
+        "acc": 0.375,
+        "f1_macro": 0.369043765958212,
+        "time_s": 93.35240888595581,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.4,
+        "f1_macro": 0.3605708950246765,
+        "time_s": 81.37634325027466,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "smote",
+      "n_total": 1000,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.325,
+        "f1_macro": 0.2987329434697856
+      },
+      "classical_rf": {
+        "acc": 0.4,
+        "f1_macro": 0.39740259740259737
+      },
+      "qsvm_v2": {
+        "acc": 0.325,
+        "f1_macro": 0.30990912711342816,
+        "time_s": 67.36118578910828,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.38,
+        "f1_macro": 0.3719841846203502,
+        "time_s": 51.33804965019226,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "smote",
+      "n_total": 1000,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.375,
+        "f1_macro": 0.3370723012042955
+      },
+      "classical_rf": {
+        "acc": 0.4,
+        "f1_macro": 0.4019061897622617
+      },
+      "qsvm_v2": {
+        "acc": 0.375,
+        "f1_macro": 0.3688888888888889,
+        "time_s": 78.90595698356628,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.31333333333333335,
+        "f1_macro": 0.28923395445134575,
+        "time_s": 59.48589515686035,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "smote",
+      "n_total": 1000,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.325,
+        "f1_macro": 0.29776269482151835
+      },
+      "classical_rf": {
+        "acc": 0.425,
+        "f1_macro": 0.4239316239316239
+      },
+      "qsvm_v2": {
+        "acc": 0.45,
+        "f1_macro": 0.3910906298003072,
+        "time_s": 90.2026858329773,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.38,
+        "f1_macro": 0.3686879882973206,
+        "time_s": 79.88547253608704,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 250,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.7,
+        "f1_macro": 0.7021943573667713
+      },
+      "classical_rf": {
+        "acc": 0.65,
+        "f1_macro": 0.6453985507246377
+      },
+      "qsvm_v2": {
+        "acc": 0.65,
+        "f1_macro": 0.6340242763772176,
+        "time_s": 52.20361828804016,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.5733333333333334,
+        "f1_macro": 0.5407407407407407,
+        "time_s": 49.141993284225464,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 250,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.65,
+        "f1_macro": 0.6425834701696771
+      },
+      "classical_rf": {
+        "acc": 0.65,
+        "f1_macro": 0.6486291486291487
+      },
+      "qsvm_v2": {
+        "acc": 0.7,
+        "f1_macro": 0.7150537634408601,
+        "time_s": 70.12125444412231,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.5466666666666666,
+        "f1_macro": 0.523127870953958,
+        "time_s": 75.36477446556091,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 500,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.775,
+        "f1_macro": 0.7652525252525253
+      },
+      "classical_rf": {
+        "acc": 0.7,
+        "f1_macro": 0.6879495736002966
+      },
+      "qsvm_v2": {
+        "acc": 0.575,
+        "f1_macro": 0.5717948717948719,
+        "time_s": 75.72878456115723,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.5333333333333333,
+        "f1_macro": 0.5048294495103006,
+        "time_s": 57.862385988235474,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 500,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.7,
+        "f1_macro": 0.6936200716845877
+      },
+      "classical_rf": {
+        "acc": 0.7,
+        "f1_macro": 0.690411373260738
+      },
+      "qsvm_v2": {
+        "acc": 0.575,
+        "f1_macro": 0.5730503978779841,
+        "time_s": 88.32684683799744,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.5866666666666667,
+        "f1_macro": 0.5569346251200139,
+        "time_s": 70.96624994277954,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 500,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.725,
+        "f1_macro": 0.7218840579710145
+      },
+      "classical_rf": {
+        "acc": 0.7,
+        "f1_macro": 0.690411373260738
+      },
+      "qsvm_v2": {
+        "acc": 0.525,
+        "f1_macro": 0.5097292250233427,
+        "time_s": 100.80233931541443,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.49333333333333335,
+        "f1_macro": 0.4396901344269765,
+        "time_s": 90.21344470977783,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 1000,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.65,
+        "f1_macro": 0.6430488459473966
+      },
+      "classical_rf": {
+        "acc": 0.7,
+        "f1_macro": 0.6989553656220323
+      },
+      "qsvm_v2": {
+        "acc": 0.65,
+        "f1_macro": 0.6241041041041041,
+        "time_s": 78.09207201004028,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.61,
+        "f1_macro": 0.6044257809013408,
+        "time_s": 60.489221811294556,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 1000,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.725,
+        "f1_macro": 0.7182539682539683
+      },
+      "classical_rf": {
+        "acc": 0.675,
+        "f1_macro": 0.6716754850088184
+      },
+      "qsvm_v2": {
+        "acc": 0.6,
+        "f1_macro": 0.5638888888888888,
+        "time_s": 89.34855365753174,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.57,
+        "f1_macro": 0.5529546455535094,
+        "time_s": 66.75143384933472,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "ctgan",
+      "n_total": 1000,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.675,
+        "f1_macro": 0.6745326278659611
+      },
+      "classical_rf": {
+        "acc": 0.7,
+        "f1_macro": 0.6996286472148542
+      },
+      "qsvm_v2": {
+        "acc": 0.6,
+        "f1_macro": 0.5687830687830688,
+        "time_s": 101.30987906455994,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.5133333333333333,
+        "f1_macro": 0.5022443431207346,
+        "time_s": 88.4243311882019,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 250,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.4,
+        "f1_macro": 0.4016225749559083
+      },
+      "classical_rf": {
+        "acc": 0.475,
+        "f1_macro": 0.46255827505827507
+      },
+      "qsvm_v2": {
+        "acc": 0.325,
+        "f1_macro": 0.2992063492063492,
+        "time_s": 59.39194655418396,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.3466666666666667,
+        "f1_macro": 0.34499492974069246,
+        "time_s": 65.40204954147339,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 250,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.4,
+        "f1_macro": 0.40075973409306737
+      },
+      "classical_rf": {
+        "acc": 0.4,
+        "f1_macro": 0.3853615520282187
+      },
+      "qsvm_v2": {
+        "acc": 0.4,
+        "f1_macro": 0.371342383107089,
+        "time_s": 69.63152623176575,
+        "n_train_used": 174,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.4266666666666667,
+        "f1_macro": 0.3907883749103183,
+        "time_s": 83.38075089454651,
+        "n_train_used": 174,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 500,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.35,
+        "f1_macro": 0.31684210526315787
+      },
+      "classical_rf": {
+        "acc": 0.425,
+        "f1_macro": 0.4177323103154305
+      },
+      "qsvm_v2": {
+        "acc": 0.425,
+        "f1_macro": 0.37977475908510394,
+        "time_s": 75.83657813072205,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.36666666666666664,
+        "f1_macro": 0.34633205611094825,
+        "time_s": 57.91523599624634,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 500,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.35,
+        "f1_macro": 0.3156709340919867
+      },
+      "classical_rf": {
+        "acc": 0.425,
+        "f1_macro": 0.4261904761904762
+      },
+      "qsvm_v2": {
+        "acc": 0.425,
+        "f1_macro": 0.39285714285714285,
+        "time_s": 93.96127820014954,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.38666666666666666,
+        "f1_macro": 0.33978758499287814,
+        "time_s": 74.95084285736084,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 500,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.35,
+        "f1_macro": 0.3156709340919867
+      },
+      "classical_rf": {
+        "acc": 0.325,
+        "f1_macro": 0.3243184533507114
+      },
+      "qsvm_v2": {
+        "acc": 0.425,
+        "f1_macro": 0.36613876319758676,
+        "time_s": 76.88203454017639,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.36666666666666664,
+        "f1_macro": 0.35429880197322056,
+        "time_s": 63.16999053955078,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 1000,
+      "qubits": 8,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.3,
+        "f1_macro": 0.2709851551956815
+      },
+      "classical_rf": {
+        "acc": 0.3,
+        "f1_macro": 0.2865879295187861
+      },
+      "qsvm_v2": {
+        "acc": 0.55,
+        "f1_macro": 0.49343339587242024,
+        "time_s": 57.40498399734497,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.39,
+        "f1_macro": 0.3895882825054946,
+        "time_s": 40.38687777519226,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 1000,
+      "qubits": 10,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.325,
+        "f1_macro": 0.29003277424330054
+      },
+      "classical_rf": {
+        "acc": 0.325,
+        "f1_macro": 0.29537037037037034
+      },
+      "qsvm_v2": {
+        "acc": 0.55,
+        "f1_macro": 0.49207027540360876,
+        "time_s": 66.91025185585022,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.4066666666666667,
+        "f1_macro": 0.3653356084292941,
+        "time_s": 50.01159906387329,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    },
+    {
+      "dataset": "original",
+      "n_total": 1000,
+      "qubits": 12,
+      "lda_dim": 2,
+      "classes": [
+        "Ransomware",
+        "Spyware",
+        "Trojan"
+      ],
+      "classical_svm": {
+        "acc": 0.325,
+        "f1_macro": 0.27919919919919917
+      },
+      "classical_rf": {
+        "acc": 0.275,
+        "f1_macro": 0.2520908004778972
+      },
+      "qsvm_v2": {
+        "acc": 0.575,
+        "f1_macro": 0.501788908765653,
+        "time_s": 79.67016172409058,
+        "n_train_used": 300,
+        "n_landmarks": 40
+      },
+      "vqc_v2_adam": {
+        "acc": 0.47,
+        "f1_macro": 0.45920341084557537,
+        "time_s": 69.33305263519287,
+        "n_train_used": 200,
+        "epochs": 10
+      }
+    }
+  ]
+}

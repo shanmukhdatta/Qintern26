@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "model": "vqc",
+      "version": "v3",
+      "dataset": "smote",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 1,
+      "result": {
+        "acc": 0.34,
+        "f1_macro": 0.26486906502167573,
+        "time_s": 33.0,
+        "epochs": 15,
+        "n_train_used": 140
+      },
+      "classical_svm_same_features": {
+        "acc": 0.5266666666666666,
+        "f1_macro": 0.5194364491086262
+      },
+      "classical_rf_same_features": {
+        "acc": 0.5066666666666667,
+        "f1_macro": 0.5060177917320775
+      }
+    }
+  ]
+}

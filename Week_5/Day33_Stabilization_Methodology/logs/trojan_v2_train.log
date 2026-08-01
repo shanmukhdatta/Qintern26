@@ -1,0 +1,39 @@
+2026-07-31 01:53:52,238 [INFO]   [Trojan] checkpoint saved @ epoch 5/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 01:55:58,306 [INFO]   [Trojan] epoch 10/100 d_loss=1.3569 g_loss=0.8360 (256.0s elapsed)
+2026-07-31 01:55:58,307 [INFO]   [Trojan] checkpoint saved @ epoch 10/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 01:56:21,676 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 11/100 (740 batch-steps already logged)
+2026-07-31 01:58:27,299 [INFO]   [Trojan] checkpoint saved @ epoch 15/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:00:37,837 [INFO]   [Trojan] epoch 20/100 d_loss=1.3248 g_loss=0.8657 (256.2s elapsed)
+2026-07-31 02:00:37,838 [INFO]   [Trojan] checkpoint saved @ epoch 20/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:01:15,185 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 21/100 (1480 batch-steps already logged)
+2026-07-31 02:03:22,754 [INFO]   [Trojan] checkpoint saved @ epoch 25/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:05:30,896 [INFO]   [Trojan] epoch 30/100 d_loss=1.3033 g_loss=0.8670 (255.7s elapsed)
+2026-07-31 02:05:30,897 [INFO]   [Trojan] checkpoint saved @ epoch 30/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:06:09,977 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 31/100 (2220 batch-steps already logged)
+2026-07-31 02:08:13,630 [INFO]   [Trojan] checkpoint saved @ epoch 35/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:10:23,770 [INFO]   [Trojan] epoch 40/100 d_loss=1.2868 g_loss=0.9244 (253.8s elapsed)
+2026-07-31 02:10:23,771 [INFO]   [Trojan] checkpoint saved @ epoch 40/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:11:02,579 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 41/100 (2960 batch-steps already logged)
+2026-07-31 02:13:08,626 [INFO]   [Trojan] checkpoint saved @ epoch 45/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:15:13,138 [INFO]   [Trojan] epoch 50/100 d_loss=1.2936 g_loss=0.9663 (250.6s elapsed)
+2026-07-31 02:15:13,139 [INFO]   [Trojan] checkpoint saved @ epoch 50/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:15:57,289 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 51/100 (3700 batch-steps already logged)
+2026-07-31 02:18:01,148 [INFO]   [Trojan] checkpoint saved @ epoch 55/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:20:05,904 [INFO]   [Trojan] epoch 60/100 d_loss=1.2505 g_loss=1.0489 (248.6s elapsed)
+2026-07-31 02:20:05,908 [INFO]   [Trojan] checkpoint saved @ epoch 60/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:24:50,616 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 61/100 (4440 batch-steps already logged)
+2026-07-31 02:26:53,020 [INFO]   [Trojan] checkpoint saved @ epoch 65/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:28:52,270 [INFO]   [Trojan] epoch 70/100 d_loss=1.2285 g_loss=1.0680 (241.7s elapsed)
+2026-07-31 02:28:52,272 [INFO]   [Trojan] checkpoint saved @ epoch 70/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:29:35,332 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 71/100 (5180 batch-steps already logged)
+2026-07-31 02:31:38,408 [INFO]   [Trojan] checkpoint saved @ epoch 75/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:33:41,815 [INFO]   [Trojan] epoch 80/100 d_loss=1.0063 g_loss=1.3354 (246.5s elapsed)
+2026-07-31 02:33:41,820 [INFO]   [Trojan] checkpoint saved @ epoch 80/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:34:35,995 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 81/100 (5920 batch-steps already logged)
+2026-07-31 02:36:54,448 [INFO]   [Trojan] checkpoint saved @ epoch 85/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:39:07,296 [INFO]   [Trojan] epoch 90/100 d_loss=1.1294 g_loss=1.4752 (271.3s elapsed)
+2026-07-31 02:39:07,297 [INFO]   [Trojan] checkpoint saved @ epoch 90/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:39:25,511 [INFO]   [Trojan] RESUMED from checkpoint: starting at epoch 91/100 (6660 batch-steps already logged)
+2026-07-31 02:41:28,432 [INFO]   [Trojan] checkpoint saved @ epoch 95/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl
+2026-07-31 02:43:30,423 [INFO]   [Trojan] epoch 100/100 d_loss=0.9473 g_loss=1.7177 (244.9s elapsed)
+2026-07-31 02:43:30,425 [INFO]   [Trojan] checkpoint saved @ epoch 100/100 -> /home/claude/qgan_work/checkpoints_v2/Trojan_ckpt.pkl

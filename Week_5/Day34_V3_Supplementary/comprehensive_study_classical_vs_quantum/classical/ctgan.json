@@ -1,0 +1,29 @@
+{
+  "dataset": "ctgan",
+  "n_total": 500,
+  "n_train": 348,
+  "n_test": 150,
+  "n_features_used": 48,
+  "lightgbm": {
+    "best_params": {
+      "num_leaves": 31,
+      "n_estimators": 200,
+      "max_depth": 4,
+      "learning_rate": 0.05
+    },
+    "acc": 0.9133333333333333,
+    "f1_macro": 0.9132501485442662,
+    "search_time_s": 2.7
+  },
+  "random_forest": {
+    "best_params": {
+      "n_estimators": 300,
+      "min_samples_split": 10,
+      "max_features": "log2",
+      "max_depth": 10
+    },
+    "acc": 0.9333333333333333,
+    "f1_macro": 0.9332995761674409,
+    "search_time_s": 11.7
+  }
+}

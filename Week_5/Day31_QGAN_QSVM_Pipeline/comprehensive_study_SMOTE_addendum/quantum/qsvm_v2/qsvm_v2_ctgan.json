@@ -1,0 +1,26 @@
+{
+  "runs": [
+    {
+      "model": "qsvm",
+      "version": "v2",
+      "dataset": "ctgan",
+      "n_qubits": 12,
+      "n_total": 500,
+      "seed": 7,
+      "result": {
+        "acc": 0.55,
+        "f1_macro": 0.5114138286893705,
+        "time_s": 88.0,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.76,
+        "f1_macro": 0.7581934965877158
+      },
+      "classical_rf_same_features": {
+        "acc": 0.74,
+        "f1_macro": 0.738805367447232
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "runs": [
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "original",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 100,
+      "result": {
+        "acc": 0.55,
+        "f1_macro": 0.5502079619726677,
+        "align_time_s": 4.4,
+        "kernel_time_s": 137.1,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.44666666666666666,
+        "f1_macro": 0.4357799119768467
+      },
+      "classical_rf_same_features": {
+        "acc": 0.5466666666666666,
+        "f1_macro": 0.5358512358512358
+      }
+    },
+    {
+      "model": "qsvm",
+      "version": "v3",
+      "dataset": "original",
+      "n_qubits": 8,
+      "n_total": 500,
+      "seed": 123,
+      "result": {
+        "acc": 0.575,
+        "f1_macro": 0.5728974331124869,
+        "align_time_s": 5.5,
+        "kernel_time_s": 126.2,
+        "n_train_used": 300
+      },
+      "classical_svm_same_features": {
+        "acc": 0.49333333333333335,
+        "f1_macro": 0.4836887392442948
+      },
+      "classical_rf_same_features": {
+        "acc": 0.5133333333333333,
+        "f1_macro": 0.5126595711204978
+      }
+    }
+  ]
+}
