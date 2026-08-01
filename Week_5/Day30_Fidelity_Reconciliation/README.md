@@ -1,5 +1,4 @@
-# Day 30 — Fidelity metrics reconciliation (Marco and Shanmukh)
-
+# Day 30 — Fidelity metrics reconciliation
 **Task:** Reconcile KS, Wasserstein, MMD across all four augmentation methods
 into one final comparison table, now that QGAN's numbers have changed
 completely from Week 3.
