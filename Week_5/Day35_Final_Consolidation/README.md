@@ -3,7 +3,7 @@
 **Task:** Package all notebooks, reports, and repo links; finalize the master
 comparison tables and written methodology.
 
-## Status: Packaged. ALL seven days fully complete. No open items.
+## Status: Packaged. Core pipeline complete. QGAN candidate fix identified (Step 1: no label smoothing) but unadopted in downstream tables (open candidate item).
 
 ### Package manifest
 
@@ -15,7 +15,7 @@ week_package/
 ├── Day30_Fidelity_Reconciliation/           COMPLETE — all 4 methods, identical protocol
 ├── Day31_QGAN_QSVM_Pipeline/                COMPLETE — no blockers
 ├── Day32_Master_Comparison_Tables/          COMPLETE — no open items
-├── Day33_Stabilization_Methodology/         COMPLETE — includes 2 failed-fix writeups
+├── Day33_Stabilization_Methodology/         COMPLETE — includes 2 failed-fix writeups + 4 follow-on experiments
 ├── Day34_V3_Supplementary/                  COMPLETE — verified against raw run data
 ├── Day35_Final_Consolidation/               this folder
 └── notebooks_reference/                     original .ipynb files, shared context
@@ -83,6 +83,14 @@ results — different pipeline versions, different seed sets, same conclusion.
 QGAN also now has verified V1/V2/V3 coverage (previously V3-only) — it loses
 to classical at every architecture version.
 
+### Follow-on QGAN Stabilization Round & Adoption Status
+
+Following the original Day 33 write-up, a follow-on stabilization round evaluated four additional QGAN variants: (1) removing label smoothing (`config_v5_no_label_smoothing.py`), (2) shrinking discriminator hidden units (`config_v3_smaller_discriminator.py`), (3) widening TTUR learning rate ratios to 10x and 30x (`config_v4_ttur_wide_ratio.py`), and (4) per-layer generator learning rates (`train_qgan_v6_per_layer_lr.py`).
+
+**Key Finding:** Removing label smoothing (Step 1) was the single fix that produced confirmed 100-epoch improvements across both malware classes, dropping `KS_median` from 0.3280 to **0.2533** for Ransomware and from 0.2930 to **0.2739** for Trojan. Other variants yielded mixed or incomplete results (and surfaced a non-fatal optimizer checkpoint attribute bug in Step 4).
+
+**Project Adoption Status:** This improved candidate checkpoint has **not** been adopted or propagated into Days 29–32 downstream classifier metrics or master tables. Adopting this candidate for downstream pipelines remains an open candidate task.
+
 ### Consistency checks performed across days
 
 - Day 31's finding (QGAN and CTGAN have statistically tied quantum-vs-classical
@@ -100,3 +108,4 @@ to classical at every architecture version.
 
 All code, data, checkpoints, logs, and notebooks referenced across every
 day's README are included directly in this package (not external links).
+

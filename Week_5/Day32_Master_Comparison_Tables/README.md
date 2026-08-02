@@ -54,6 +54,9 @@ would be much stronger evidence than either one alone. They did.
 **3. Fidelity ranking (from Day 30):** SMOTE > CTGAN > QGAN, consistent on
 every class and metric (KS 0.010-0.013 vs. 0.091-0.133 vs. 0.28-0.33).
 
+> [!NOTE]
+> **Follow-on Stabilization Candidate Note:** Subsequent testing in Day 33 Part C showed that removing label smoothing (`config_v5_no_label_smoothing.py`) improves 100-epoch QGAN fidelity to **KS_median = 0.2533** (Ransomware) and **0.2739** (Trojan). The baseline numbers (0.28–0.33) in the tables above remain un-overwritten as the candidate model has not yet been propagated downstream.
+
 **4. Downstream classifier impact (from Day 29):**
 
 | Method | RF F1 | XGBoost F1 | SVM F1 |

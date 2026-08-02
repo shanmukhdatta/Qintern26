@@ -193,3 +193,86 @@ on purpose — it's a labeled comparison copy for the failed-fix writeup above,
 not meant to be imported as `config`. As with Day 29, `config.py` expects a
 sibling `../data/malmem_original_reconstructed.csv` — point it at
 `../../shared_data/malmem_original.csv` or copy/rename accordingly to actually run.
+
+---
+
+## Part C — Follow-on stabilization round (Four additional experiments)
+
+Following the initial Part A diagnosis and three initial attempts, four additional stabilization experiments were executed to evaluate direct architectural and hyperparameter levers proposed in §A.3. 
+
+### Data Path & Dataset Verification
+`code/config.py` initially specified `DATA_PATH = "data/malmem_original_reconstructed.csv"`, a file path absent from the unzipped package. Per the Day 33 troubleshooting guide, this was resolved by copying `shared_data/malmem_original.csv` into that path. This setup correctly reproduced the exact baseline target gap-fill counts:
+- **Ransomware:** `n_real` = 9,791, `target_n` = 10,020 $\rightarrow$ `n_needed` = **229** (7,600 total batch steps at batch size 128 over 100 epochs)
+- **Trojan:** `n_real` = 9,487, `target_n` = 10,020 $\rightarrow$ `n_needed` = **533** (7,400 total batch steps at batch size 128 over 100 epochs)
+
+---
+
+### Master Results Table (Follow-on Round)
+
+| Experiment / File | KS_median (Ransomware) | KS_median (Trojan) | Wasserstein_median (Rans / Trojan) | MMD (Rans / Trojan) | Loss Trend (d_loss / g_loss) & Gap $\Delta$ | Execution Horizon | Plain Verdict |
+|---|---|---|---|---|---|---|---|
+| **Baseline (100-epoch reference)** | 0.3280 | 0.2930 | 0.6643 / 0.8712 | 0.1628 / 0.3422 | d_loss falling, g_loss rising; gap widening | Full 100 epochs | Baseline Reference |
+| **Step 1 — `config_v5_no_label_smoothing.py`** | **0.2533** | **0.2739** | 0.7722 / 0.6014 | 0.1494 / 0.4691 | Discriminator winning; gap **narrowed** (Rans: 0.622→0.230; Trojan: 0.621→0.491) | Full 100 epochs | **Worked** — improved both classes |
+| **Step 2 — `config_v3_smaller_discriminator.py`** | 0.2969 | 0.3077 | 0.7985 / 0.8046 | 0.1315 / 0.4546 | Discriminator winning; gap narrowed (Rans: 0.637→0.477; Trojan: 0.660→0.544) | Full 100 epochs | **Mixed** — worked on Ransomware, slightly worse on Trojan |
+| **Step 3a — `config_v4_ttur_wide_ratio.py` (Test A: 10x)** | 0.3144 | 0.2627 | 1.0074 / 0.6093 | 0.1499 / 0.4739 | Discriminator winning (d falling, g rising on both) | Full 100 epochs | **Partially worked** — triggered Test B |
+| **Step 3b — `config_v4_ttur_wide_ratio.py` (Test B: 30x)** | ≈0.328–0.333 | ≈0.251 | — / — | — / — | Discriminator winning pattern persisted | **Rough estimate** (Rans ~60ep, Trojan 15ep) | **Rough: No clear gain over 10x** |
+| **Step 4 — `train_qgan_v6_per_layer_lr.py`** | ≈0.3230 | ≈0.2780 | — / — | — / — | Gap: Rans 0.583→0.562; Trojan 0.562→0.581 | **Rough estimate** (15 epochs only) | **Rough: Inconclusive** (checkpoint bug found) |
+
+---
+
+### In-Depth Experiment Breakdown
+
+#### 1. Step 1 — Relaxing Label Smoothing (`config_v5_no_label_smoothing.py`)
+- **Configuration & Hyperparameters:**
+  - `LABEL_SMOOTHING_GAMMA = 1.0` (un-smoothed binary cross-entropy real target $= 1.0$, replacing baseline smoothed target).
+  - Generator: 4 variational layers on 6 qubits (`LR_GEN = 7e-3`).
+  - Discriminator: Classical MLP (16 $\rightarrow$ 8 hidden units, `LR_DISC = 2e-3`, 1:1 update ratio).
+- **Loss Trajectory Analysis:**
+  - *Ransomware (7,600 batch-steps):* First-50-batch average `d_loss = 1.378`, `g_loss = 0.757` (gap $= 0.622$). Last-50-batch average `d_loss = 1.171`, `g_loss = 0.940` (gap $= 0.230$). Discriminator loss decreased and generator loss increased ("discriminator winning" pattern), but the loss gap $|g\_loss - d\_loss|$ **narrowed by 63.0%** relative to baseline.
+  - *Trojan (7,400 batch-steps):* First-50-batch average `d_loss = 1.377`, `g_loss = 0.756` (gap $= 0.621$). Last-50-batch average `d_loss = 1.296`, `g_loss = 0.805` (gap $= 0.491$). Gap narrowed by 20.9%.
+- **Comprehensive Fidelity Metrics (Full 100 Epochs):**
+  - **Ransomware:** `KS_median = 0.2533` (vs 0.3280 baseline $\rightarrow$ **−0.0747 absolute, ~22.9% relative improvement**), `KS_p75 = 0.4978`, `Wasserstein_median = 0.7722`, `Wasserstein_p75 = 6.8470`, `MMD = 0.1494`.
+  - **Trojan:** `KS_median = 0.2739` (vs 0.2930 baseline $\rightarrow$ **−0.0191 absolute, ~6.5% relative improvement**), `KS_p75 = 0.4559`, `Wasserstein_median = 0.6014`, `Wasserstein_p75 = 3.2140`, `MMD = 0.4691`.
+- **Verdict:** **Worked.** Relaxing label smoothing produced the strongest single-fix improvement across both malware classes and narrowed the adversarial loss gap across full 100-epoch training.
+
+#### 2. Step 2 — Shrinking Discriminator Capacity (`config_v3_smaller_discriminator.py`)
+- **Configuration & Process Integrity Note:**
+  - Discriminator hidden units shrunk from 16/8 to **8/4**, with mild label smoothing (`LABEL_SMOOTHING_GAMMA = 0.9`).
+  - *Harness Race Condition Incident:* An early attempt encountered CPU contention due to concurrent execution of two processes against the same checkpoint file. Corrupted artifacts were discarded, file-locking was implemented in the harness, and a clean rerun was completed.
+- **Loss Trajectory Analysis:**
+  - *Ransomware:* `d_loss` 1.386 $\rightarrow$ 1.316, `g_loss` 0.748 $\rightarrow$ 0.839 (gap narrowed 0.637 $\rightarrow$ 0.477).
+  - *Trojan:* `d_loss` 1.403 $\rightarrow$ 1.352, `g_loss` 0.743 $\rightarrow$ 0.807 (gap narrowed 0.660 $\rightarrow$ 0.544).
+- **Comprehensive Fidelity Metrics (Full 100 Epochs):**
+  - **Ransomware:** `KS_median = 0.2969` (vs 0.3280 baseline $\rightarrow$ **−0.0311 absolute, ~9.4% improvement**), `KS_p75 = 0.4869`, `Wasserstein_median = 0.7985`, `Wasserstein_p75 = 7.1140`, `MMD = 0.1315`.
+  - **Trojan:** `KS_median = 0.3077` (vs 0.2930 baseline $\rightarrow$ **+0.0147 absolute, ~5.1% worse**), `KS_p75 = 0.4409`, `Wasserstein_median = 0.8046`, `MMD = 0.4546`.
+- **Verdict:** **Mixed.** Improved Ransomware fidelity, but regressed Trojan fidelity despite narrowing the loss gap on both classes.
+
+#### 3. Step 3 — Two-Time Scale Update Rule / TTUR Tuning (`config_v4_ttur_wide_ratio.py`)
+- **Configuration:** Widened generator:discriminator learning rate ratio beyond the baseline 3.5x ratio (`LR_GEN = 7e-3`, `LR_DISC = 2e-3`).
+- **Test A (10x Ratio: `LR_GEN = 1e-2`, `LR_DISC = 1e-3`, Full 100 Epochs):**
+  - *Ransomware:* `d_loss` 1.400 $\rightarrow$ 1.313, `g_loss` 0.764 $\rightarrow$ 0.853. `KS_median = 0.3144` (vs 0.328 baseline, ~4.2% better), `Wasserstein_median = 1.0074`, `MMD = 0.1499`.
+  - *Trojan:* `d_loss` 1.392 $\rightarrow$ 1.340, `g_loss` 0.766 $\rightarrow$ 0.828. `KS_median = 0.2627` (vs 0.293 baseline, ~10.4% better), `Wasserstein_median = 0.6093`, `MMD = 0.4739`.
+  - *Trend:* The discriminator loss continued falling while generator loss rose on both classes (discriminator winning pattern). Triggered Test B per task rules.
+- **Test B (30x Ratio: `LR_GEN = 1.5e-2`, `LR_DISC = 5e-4`, Fast/Rough Estimate):**
+  - *Execution Horizon:* Evaluated as a fast directional read (~60 epochs partial checkpoint reuse for Ransomware, 15 epochs from scratch for Trojan).
+  - *Ransomware (Partial ~60ep):* `KS_median ≈ 0.328–0.333` (flat/worse vs Test A's 0.3144).
+  - *Trojan (Partial 15ep):* `KS_median ≈ 0.2510` (directional, unverified at 100 epochs).
+  - *Trend:* Discriminator winning pattern persisted (`d_loss` falling, `g_loss` rising).
+- **Verdict:** **Partially Worked (Test A) / Rough No Clear Gain (Test B).** Expanding to 30x ratio did not consistently outperform 10x ratio.
+
+#### 4. Step 4 — Per-Layer Generator LR Schedule (`train_qgan_v6_per_layer_lr.py` + `optim_per_layer.py`)
+- **Configuration:** Replaced generator optimizer with `LayeredAdamOptimizer` (`code/optim_per_layer.py`) specifying per-layer decay bounds (`LR_MIN_FRAC_BY_LAYER = [0.35, 0.35, 0.15, 0.15]`).
+- **Code-Level Bug & Technical Root Cause:**
+  The baseline checkpointing routine in `train_qgan.py` assumes standard PyTorch/PennyLane Adam optimizers exposing a single step counter attribute (`optimizer.t` or `optimizer.state[p]['step']`). `LayeredAdamOptimizer` wraps multiple layer-specific Adam optimizers internally and does not expose a unified top-level `.t` attribute. Checkpoint saving threw uncaught `AttributeError` warnings. While training proceeded in memory, **checkpoints failed to serialize properly, rendering the run non-resumable**.
+- **Metrics (Fast/Rough Estimate, 15 Epochs Only):**
+  - *Ransomware:* `KS_median ≈ 0.3230` (vs 0.328 baseline), loss gap 0.583 $\rightarrow$ 0.562.
+  - *Trojan:* `KS_median ≈ 0.2780` (vs 0.293 baseline), loss gap 0.562 $\rightarrow$ 0.581.
+- **Verdict:** **Inconclusive.** Fast 15-epoch estimate; requires fixing the optimizer serialization interface before executing a complete 100-epoch trial.
+
+---
+
+### Recommended Candidate & Explicit Adoption Status
+
+1. **Recommended Candidate:** Step 1 (`config_v5_no_label_smoothing.py`) is the sole recommended candidate checkpoint to replace the baseline QGAN generator. It achieved confirmed 100-epoch improvements across both malware classes (Ransomware KS: 0.2533 vs 0.3280; Trojan KS: 0.2739 vs 0.2930) while stabilizing the adversarial loss gap.
+2. **Explicit Project Adoption Status:** **NONE** of these four follow-on checkpoints have been adopted or propagated into the downstream metrics in Days 29–32 (such as `MASTER_COMPARISON_TABLE.md` or downstream classifier evaluations). All existing tables across Days 29–32 preserve the baseline 100-epoch QGAN checkpoint values.
+

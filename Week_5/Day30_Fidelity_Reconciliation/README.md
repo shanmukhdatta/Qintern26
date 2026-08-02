@@ -51,6 +51,17 @@ Full table: `results/MASTER_fidelity_4way.csv`. QGAN's before/after
 Not close — SMOTE's KS score is roughly 10x smaller than CTGAN's, which is
 roughly 3x smaller than QGAN's, across the board.
 
+> [!NOTE]
+> **Follow-on Stabilization Candidate Comparison:**
+> Day 33 Part C evaluated four follow-on stabilization experiments. Step 1 (removing label smoothing, `config_v5_no_label_smoothing.py`) achieved superior 100-epoch fidelity compared to the baseline checkpoint used in the table above:
+> 
+> | Class | Baseline 100-ep KS_median | Step 1 Candidate KS_median | Relative Delta | Baseline Wasserstein_median | Step 1 Wasserstein_median |
+> |---|---|---|---|---|---|
+> | Ransomware | 0.3280 | **0.2533** | **−22.9%** | 0.6643 | 0.7722 |
+> | Trojan | 0.2930 | **0.2739** | **−6.5%** | 0.8712 | 0.6014 |
+> 
+> The baseline values (0.3280 / 0.2930) are preserved in the main table above because the Step 1 candidate checkpoint has not been propagated to downstream Day 29–32 evaluations.
+
 ## Interpretation (in plain language)
 - **SMOTE looks the most "real" almost by construction.** It builds new
   rows by interpolating directly between two real neighboring rows — so it

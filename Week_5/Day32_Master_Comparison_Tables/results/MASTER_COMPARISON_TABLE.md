@@ -70,6 +70,10 @@ found a second way with a different pipeline version and a different seed set.
 **Ranking, consistent across every class and metric: SMOTE > CTGAN > QGAN.**
 Full breakdown: Day 30 README.
 
+> [!NOTE]
+> **Follow-on Stabilization Candidate Note:** Follow-on experiments documented in Day 33 Part C identified an improved QGAN candidate by removing label smoothing (`config_v5_no_label_smoothing.py`), achieving 100-epoch `KS_median` scores of **0.2533** (Ransomware) and **0.2739** (Trojan). As this new checkpoint has not been adopted for downstream pipeline runs in Days 29–32, the baseline table values above are preserved.
+
+
 ## 4. Downstream classifiers (RF/XGBoost/LightGBM/SVM), full-dataset protocol — COMPLETE (was blocked, now resolved)
 
 | Method | RF F1 | XGBoost F1 | LightGBM F1 | SVM F1 |
