@@ -1,0 +1,22 @@
+{
+  "A": {
+    "desc": "global kernel, NO alignment",
+    "acc": 0.7,
+    "f1_macro": 0.6900584795321637
+  },
+  "B": {
+    "desc": "LOCAL kernel, no alignment",
+    "acc": 0.825,
+    "f1_macro": 0.8279314888010539
+  },
+  "C": {
+    "desc": "global kernel, WITH alignment",
+    "acc": 0.725,
+    "f1_macro": 0.7197847197847197
+  },
+  "D": {
+    "desc": "LOCAL kernel, WITH alignment (=full v3)",
+    "acc": 0.875,
+    "f1_macro": 0.8732974910394264
+  }
+}

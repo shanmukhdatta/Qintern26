@@ -1,0 +1,57 @@
+{
+  "protocol": "Anh ramp n=200->n=1000, VQC via SPSA (Ge config PENDING -- placeholder arch)",
+  "arch_note": "StronglyEntanglingLayers placeholder, reps=2, 8q -- swap for Ge's config",
+  "n_train": 200,
+  "n_test": 60,
+  "n_qubits": 8,
+  "reps": 1,
+  "batch_size": 16,
+  "n_steps": 200,
+  "train_time_sec": 21.8,
+  "final_train_loss": 1.0283287218000583,
+  "train_accuracy": 0.425,
+  "vqc_test_accuracy": 0.4333,
+  "vqc_test_macro_f1": 0.4087,
+  "vqc_confusion_matrix": [
+    [
+      5,
+      8,
+      7
+    ],
+    [
+      4,
+      6,
+      10
+    ],
+    [
+      1,
+      4,
+      15
+    ]
+  ],
+  "vqc_per_class": {
+    "Ransomware": {
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1-score": 0.3333333333333333,
+      "support": 20.0
+    },
+    "Spyware": {
+      "precision": 0.3333333333333333,
+      "recall": 0.3,
+      "f1-score": 0.3157894736842105,
+      "support": 20.0
+    },
+    "Trojan": {
+      "precision": 0.46875,
+      "recall": 0.75,
+      "f1-score": 0.5769230769230769,
+      "support": 20.0
+    }
+  },
+  "class_labels": [
+    "Ransomware",
+    "Spyware",
+    "Trojan"
+  ]
+}

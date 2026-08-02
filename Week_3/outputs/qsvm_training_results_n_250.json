@@ -1,0 +1,52 @@
+{
+  "n_qubits": 8,
+  "train_subsample": 200,
+  "test_subsample": 60,
+  "kernel_build_time_sec": 123.1,
+  "qsvm_accuracy": 0.6333,
+  "qsvm_macro_f1": 0.6249,
+  "qsvm_confusion_matrix": [
+    [
+      11,
+      4,
+      5
+    ],
+    [
+      6,
+      10,
+      4
+    ],
+    [
+      2,
+      1,
+      17
+    ]
+  ],
+  "qsvm_per_class": {
+    "Ransomware": {
+      "precision": 0.5789473684210527,
+      "recall": 0.55,
+      "f1-score": 0.5641025641025641,
+      "support": 20.0
+    },
+    "Spyware": {
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1-score": 0.5714285714285714,
+      "support": 20.0
+    },
+    "Trojan": {
+      "precision": 0.6538461538461539,
+      "recall": 0.85,
+      "f1-score": 0.7391304347826086,
+      "support": 20.0
+    }
+  },
+  "classical_rbf_svm_accuracy": 0.6,
+  "classical_rbf_svm_macro_f1": 0.5917,
+  "class_labels": [
+    "Ransomware",
+    "Spyware",
+    "Trojan"
+  ]
+}

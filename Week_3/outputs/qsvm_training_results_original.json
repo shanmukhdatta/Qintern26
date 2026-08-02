@@ -1,0 +1,58 @@
+{
+  "dataset": "original CIC-MalMem-2022, malware-only, family-imbalanced",
+  "family_distribution_full": {
+    "Spyware": 10020,
+    "Ransomware": 9791,
+    "Trojan": 9487
+  },
+  "n_train": 200,
+  "n_test": 60,
+  "n_qubits": 8,
+  "kernel_build_time_sec": 118.5,
+  "qsvm_on_original_accuracy": 0.3667,
+  "qsvm_on_original_macro_f1": 0.2836,
+  "qsvm_confusion_matrix": [
+    [
+      16,
+      4,
+      0
+    ],
+    [
+      14,
+      6,
+      1
+    ],
+    [
+      19,
+      0,
+      0
+    ]
+  ],
+  "qsvm_per_class": {
+    "Ransomware": {
+      "precision": 0.32653061224489793,
+      "recall": 0.8,
+      "f1-score": 0.463768115942029,
+      "support": 20.0
+    },
+    "Spyware": {
+      "precision": 0.6,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.3870967741935484,
+      "support": 21.0
+    },
+    "Trojan": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 19.0
+    }
+  },
+  "classical_rbf_on_original_accuracy": 0.45,
+  "classical_rbf_on_original_macro_f1": 0.4328,
+  "class_labels": [
+    "Ransomware",
+    "Spyware",
+    "Trojan"
+  ]
+}
