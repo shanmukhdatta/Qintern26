@@ -1,0 +1,62 @@
+{
+  "config": {
+    "qubits": 8,
+    "seed": 7,
+    "n_total": 500,
+    "max_train": 300,
+    "max_test": 40,
+    "align_subset": 10,
+    "align_iters": 5,
+    "n_perm": 100
+  },
+  "rows": [
+    {
+      "model": "v2 (global)",
+      "dataset": "Original",
+      "qubits": 8,
+      "seed": 7,
+      "test_batch_size": 40,
+      "gram_offdiag_std": 0.281216405770255,
+      "kta": -0.01854066858579337,
+      "kta_chance_floor": -0.20072881661549793,
+      "kta_above_floor": 0.18218814802970457,
+      "gram_build_time_s": 4.3
+    },
+    {
+      "model": "v3 (local)",
+      "dataset": "Original",
+      "qubits": 8,
+      "seed": 7,
+      "test_batch_size": 40,
+      "gram_offdiag_std": 0.280280328764121,
+      "kta": -0.23310920876046154,
+      "kta_chance_floor": -0.3880896742336501,
+      "kta_above_floor": 0.15498046547318856,
+      "gram_build_time_s": 4.3
+    },
+    {
+      "model": "v2 (global)",
+      "dataset": "CTGAN",
+      "qubits": 8,
+      "seed": 7,
+      "test_batch_size": 40,
+      "gram_offdiag_std": 0.12897181410170616,
+      "kta": 0.10182331593879021,
+      "kta_chance_floor": 0.004795910016679447,
+      "kta_above_floor": 0.09702740592211076,
+      "gram_build_time_s": 4.2
+    },
+    {
+      "model": "v3 (local)",
+      "dataset": "CTGAN",
+      "qubits": 8,
+      "seed": 7,
+      "test_batch_size": 40,
+      "gram_offdiag_std": 0.15924235321338603,
+      "kta": -0.21477011200709226,
+      "kta_chance_floor": -0.26525196439186866,
+      "kta_above_floor": 0.0504818523847764,
+      "gram_build_time_s": 4.4
+    }
+  ]
+}

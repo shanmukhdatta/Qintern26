@@ -1,0 +1,13 @@
+{
+  "n_landmarks": 150,
+  "metrics": {
+    "acc": 0.775,
+    "f1_macro": 0.7708333333333334,
+    "align_time_s": 5.1,
+    "kernel_time_s": 386.9,
+    "n_train_used": 300,
+    "n_landmarks": 150,
+    "C": 1.0,
+    "w_trained_norm": 0.9694421310413815
+  }
+}

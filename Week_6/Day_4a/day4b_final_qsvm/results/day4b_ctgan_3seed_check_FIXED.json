@@ -1,0 +1,44 @@
+[
+  {
+    "seed": 7,
+    "readout": "linear_svm",
+    "test_acc": 0.875,
+    "macro_f1": 0.873,
+    "dataset": "CTGAN"
+  },
+  {
+    "seed": 7,
+    "readout": "logreg",
+    "test_acc": 0.9,
+    "macro_f1": 0.904,
+    "dataset": "CTGAN"
+  },
+  {
+    "seed": 1,
+    "readout": "linear_svm",
+    "test_acc": 0.875,
+    "macro_f1": 0.864,
+    "dataset": "CTGAN"
+  },
+  {
+    "seed": 1,
+    "readout": "logreg",
+    "test_acc": 0.825,
+    "macro_f1": 0.822,
+    "dataset": "CTGAN"
+  },
+  {
+    "seed": 42,
+    "readout": "linear_svm",
+    "test_acc": 0.8,
+    "macro_f1": 0.804,
+    "dataset": "CTGAN"
+  },
+  {
+    "seed": 42,
+    "readout": "logreg",
+    "test_acc": 0.8,
+    "macro_f1": 0.799,
+    "dataset": "CTGAN"
+  }
+]

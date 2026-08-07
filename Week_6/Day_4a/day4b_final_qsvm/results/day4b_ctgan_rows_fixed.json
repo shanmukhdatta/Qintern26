@@ -1,0 +1,42 @@
+[
+  {
+    "readout": "linear_svm",
+    "train_acc": 0.7833333333333333,
+    "test_acc": 0.875,
+    "macro_f1": 0.8732974910394264,
+    "overfit_gap": -0.09166666666666667,
+    "time_s": 58.4,
+    "dataset": "CTGAN",
+    "seed": 7
+  },
+  {
+    "readout": "mlp",
+    "train_acc": 0.43333333333333335,
+    "test_acc": 0.2,
+    "macro_f1": 0.15654520917678813,
+    "overfit_gap": 0.23333333333333334,
+    "time_s": 0.2,
+    "dataset": "CTGAN",
+    "seed": 7
+  },
+  {
+    "readout": "xgboost",
+    "train_acc": 1.0,
+    "test_acc": 0.3,
+    "macro_f1": 0.2919611622760048,
+    "overfit_gap": 0.7,
+    "time_s": 0.3,
+    "dataset": "CTGAN",
+    "seed": 7
+  },
+  {
+    "readout": "logreg",
+    "train_acc": 0.7833333333333333,
+    "test_acc": 0.9,
+    "macro_f1": 0.9038405797101449,
+    "overfit_gap": -0.1166666666666667,
+    "time_s": 0.2,
+    "dataset": "CTGAN",
+    "seed": 7
+  }
+]

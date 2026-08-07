@@ -1,0 +1,30 @@
+# Day 5a — KTA Alignment Subset-Size Sensitivity Sweep — run config
+# All values below were used exactly as-is for the reported results.
+n_qubits: 8
+seed: 7
+C: 1.0
+kta_subset_sizes: [5, 10, 20, 50]
+datasets: ["CTGAN", "Original"]
+n_total_per_dataset: 500        # samples drawn before train/test split (per load_ctgan/load_original)
+measurement_grouping: "g=2 (non-overlapping adjacent pairs, as in original V3 scope)"
+feature_selection: "xgboost (top-q by feature_importances_)"
+align_iters: 5                  # passed to kernel_target_alignment_train -> maxiter_eff = max(align_iters, n_qubits+2)
+n_landmarks: 40
+max_train: 300
+max_test: 40
+
+# Paths -- override via environment variables CTGAN_PATH / ORIGINAL_PATH.
+# Defaults match the Claude session's uploaded filenames; set these to your
+# local paths when re-running from your own repo checkout.
+ctgan_path_env_var: "CTGAN_PATH"
+original_path_env_var: "ORIGINAL_PATH"
+ctgan_path_default: "/mnt/user-data/uploads/malmem_ctgan.csv"
+original_path_default: "/mnt/user-data/uploads/MalMem2022.csv"
+
+# Sanity check this run was validated against:
+reference_check:
+  variant: "xgboost, q=8, seed=7, C=1.0, align_subset=10, dataset=CTGAN"
+  expected_accuracy: 0.875
+  expected_macro_f1: 0.8732974910394264
+  source: "ablation.py config D / results_v3full.json (existing repo headline result)"
+  result: "PASS -- exact match"

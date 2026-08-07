@@ -1,0 +1,154 @@
+[
+  {
+    "g": 1,
+    "dataset": "ctgan",
+    "qubits": 8,
+    "seed": 7,
+    "accuracy": 0.725,
+    "macro_f1": 0.7238095238095238,
+    "gram_offdiag_std": 0.12629850595331937,
+    "kta_score": -0.27119119280324033,
+    "kta_chance_floor": -0.2831434918408267,
+    "kta_above_floor": 0.011952299037586378,
+    "kernel_time_s": 123.3,
+    "n_train_used": 300,
+    "classes": [
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ]
+  },
+  {
+    "g": 2,
+    "dataset": "ctgan",
+    "qubits": 8,
+    "seed": 7,
+    "accuracy": 0.825,
+    "macro_f1": 0.8279314888010539,
+    "gram_offdiag_std": 0.16667594036273506,
+    "kta_score": -0.22135797680790972,
+    "kta_chance_floor": -0.2430454888127452,
+    "kta_above_floor": 0.021687512004835485,
+    "kernel_time_s": 112.2,
+    "n_train_used": 300,
+    "classes": [
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ]
+  },
+  {
+    "g": 4,
+    "dataset": "ctgan",
+    "qubits": 8,
+    "seed": 7,
+    "accuracy": 0.825,
+    "macro_f1": 0.824952824952825,
+    "gram_offdiag_std": 0.1774621498527549,
+    "kta_score": -0.09563533313894187,
+    "kta_chance_floor": -0.13580754728027286,
+    "kta_above_floor": 0.040172214141330986,
+    "kernel_time_s": 82.6,
+    "n_train_used": 300,
+    "classes": [
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ]
+  },
+  {
+    "g": 8,
+    "dataset": "ctgan",
+    "qubits": 8,
+    "seed": 7,
+    "accuracy": 0.7,
+    "macro_f1": 0.6900584795321637,
+    "gram_offdiag_std": 0.13444301236329104,
+    "kta_score": 0.05493552862176159,
+    "kta_chance_floor": 0.009206479738946128,
+    "kta_above_floor": 0.04572904888281546,
+    "kernel_time_s": 78.2,
+    "n_train_used": 300,
+    "classes": [
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ]
+  },
+  {
+    "g": 1,
+    "dataset": "original",
+    "qubits": 8,
+    "seed": 7,
+    "accuracy": 0.45,
+    "macro_f1": 0.44831541218637994,
+    "gram_offdiag_std": 0.14978465316216164,
+    "kta_score": -0.27444969524264906,
+    "kta_chance_floor": -0.2812966584997379,
+    "kta_above_floor": 0.006846963257088834,
+    "kernel_time_s": 95.0,
+    "n_train_used": 300,
+    "classes": [
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ]
+  },
+  {
+    "g": 2,
+    "dataset": "original",
+    "qubits": 8,
+    "seed": 7,
+    "accuracy": 0.45,
+    "macro_f1": 0.4447415329768271,
+    "gram_offdiag_std": 0.22508058881895845,
+    "kta_score": -0.21390619034352407,
+    "kta_chance_floor": -0.2287241682092941,
+    "kta_above_floor": 0.014817977865770021,
+    "kernel_time_s": 95.8,
+    "n_train_used": 300,
+    "classes": [
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ]
+  },
+  {
+    "g": 4,
+    "dataset": "original",
+    "qubits": 8,
+    "seed": 7,
+    "accuracy": 0.45,
+    "macro_f1": 0.44309764309764316,
+    "gram_offdiag_std": 0.22736564929857603,
+    "kta_score": -0.10690176050480502,
+    "kta_chance_floor": -0.13163319694671893,
+    "kta_above_floor": 0.024731436441913918,
+    "kernel_time_s": 105.5,
+    "n_train_used": 300,
+    "classes": [
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ]
+  },
+  {
+    "g": 8,
+    "dataset": "original",
+    "qubits": 8,
+    "seed": 7,
+    "accuracy": 0.375,
+    "macro_f1": 0.3676287492925863,
+    "gram_offdiag_std": 0.20050752889883758,
+    "kta_score": -0.01327003004484989,
+    "kta_chance_floor": -0.03877500622731198,
+    "kta_above_floor": 0.025504976182462093,
+    "kernel_time_s": 74.1,
+    "n_train_used": 300,
+    "classes": [
+      "Ransomware",
+      "Spyware",
+      "Trojan"
+    ]
+  }
+]

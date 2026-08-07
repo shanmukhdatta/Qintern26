@@ -1,0 +1,30 @@
+{
+  "runs": [
+    {
+      "variant": "xgboost",
+      "qubits": 8,
+      "seed": 7,
+      "n_total": 500,
+      "C": 1.0,
+      "dataset": "EMBER",
+      "classical_svm": {
+        "acc": 0.825,
+        "f1_macro": 0.8248905565978737
+      },
+      "classical_rf": {
+        "acc": 0.775,
+        "f1_macro": 0.7748592870544091
+      },
+      "qsvm_v3": {
+        "acc": 0.9,
+        "f1_macro": 0.899749373433584,
+        "align_time_s": 4.8,
+        "kernel_time_s": 71.9,
+        "n_train_used": 300,
+        "n_landmarks": 40,
+        "C": 1.0,
+        "w_trained_norm": 0.3866661572971878
+      }
+    }
+  ]
+}
