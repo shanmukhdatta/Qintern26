@@ -1,0 +1,21 @@
+name: QTagger+ Streamlit checks
+on:
+  push:
+    branches: [qtagger-final-training-notebook, main]
+  pull_request:
+    branches: [main]
+jobs:
+  python-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Check syntax
+        run: python -m compileall -q app.py qtagger scripts tests
+      - name: Run inference unit tests
+        run: python -m pytest -q tests/
