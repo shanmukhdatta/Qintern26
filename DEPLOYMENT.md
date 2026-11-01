@@ -62,7 +62,7 @@ Open the local URL printed by Streamlit. Download the demo input CSV, upload it,
 3. Repository: `shanmukhdatta/Qintern26`.
 4. Branch: `main` after merging, or `qtagger-final-training-notebook` while testing.
 5. Main file path: `app.py`.
-6. Advanced settings: choose **Python 3.11**, and deploy. Streamlit installs `requirements.txt`.
+6. Advanced settings: choose **Python 3.13** (matching Kaggle) if offered, and deploy. Streamlit installs `requirements.txt`.
 7. Wait for dependencies and the app to load. Use the real demo CSV to test inference.
 
 **Deployment cannot be marked successful until a real Kaggle model is present and a prediction succeeds.** If you see "trained model has not been installed," add the verified model and redeploy. If you see a package error, compare installed versions with Kaggle's `environment.json` and adjust `requirements.txt`.
@@ -74,7 +74,7 @@ Streamlit Community Cloud will assign a URL such as `https://YOUR-APP-NAME.strea
 ## 6. Troubleshooting
 
 - **Model not found:** Confirm `models/qtagger_v3_1.joblib` exists in the deployed GitHub branch.
-- **ImportError / unpickling error:** Use Python 3.11 and compare scikit-learn / NumPy versions against Kaggle `environment.json`. Only use a trusted model.
+- **ImportError / unpickling error:** Prefer Python 3.13 to match the Kaggle training environment and compare scikit-learn / NumPy versions against Kaggle `environment.json`. Only use a trusted model.
 - **Missing columns:** The CSV must include all `raw_feature_columns`; use the real Kaggle demo CSV as the template.
 - **Slow predictions:** Every record needs `N_LANDMARKS` quantum circuit evaluations. Keep demo uploads small; the app limits to 100 rows.
 - **No model accuracy displayed:** Include `evaluation_metrics.json` or ensure the joblib's `evaluation` field is populated.
