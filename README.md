@@ -7,11 +7,11 @@ Welcome to the **Qintern'26 — QTagger+** repository. This repository contains 
 
 ## 🧬 QTagger+ interactive demo (Streamlit)
 
-**Deployment link:** **[Open the QTagger+ Streamlit application](https://qtagger.streamlit.app/)** (URL provided by the project owner). The trained QSVM v3.1 model is committed to this deployment branch, and the GitHub Actions model smoke test passed. The hosted website and its predictions have not been independently exercised from this documentation update.
+**Deployment link:** **[Open the QTagger+ Streamlit application](https://qtagger.streamlit.app/)** (URL provided by the project owner). The trained QSVM v3.1 model is committed to this repository, and the GitHub Actions model smoke test passed. The hosted website and its predictions have not been independently exercised from this documentation update.
 
 - **[Streamlit app source](./app.py)** — upload numerical memory-forensics CSV, predict malware family, inspect evaluation metrics, download results.
 - **[Modular quantum inference](./qtagger/inference.py)** — load saved QSVM v3.1, reproduce train-time preprocessing, rebuild PennyLane circuit and run Nyström + SVM.
-- **[Deployment walkthrough](./DEPLOYMENT.md)** — export Kaggle model, validate artifacts, commit, deploy to Streamlit Community Cloud and add the verified live URL.
+- **[Deployment walkthrough](./DEPLOYMENT.md)** — export Kaggle model, validate artifacts, deploy to Streamlit Community Cloud and verify the published URL.
 - **[Final training notebook](./notebooks/QTagger_Plus_Final_Training.ipynb)** — documented Kaggle-ready training, baseline comparison, model export and reload check.
 - **[Model artifacts guide](./models/README.md)** — required `.joblib`, optional evaluation files and labels.
 
@@ -31,7 +31,7 @@ This is a **research classifier for pre-extracted numerical memory features**, n
 
 ## 🧬 QTagger+ Interactive Demo — corrected QSVM v3.1
 
-**Deployment URL:** **[https://qtagger.streamlit.app/](https://qtagger.streamlit.app/)** (provided by the project owner). The app code, committed model, and Kaggle evaluation artifacts are on the [deployment branch](https://github.com/shanmukhdatta/Qintern26/tree/qtagger-final-training-notebook). [GitHub Actions](https://github.com/shanmukhdatta/Qintern26/actions) passed model smoke testing; hosted-browser inference remains to be independently confirmed.
+**Deployment URL:** **[https://qtagger.streamlit.app/](https://qtagger.streamlit.app/)** (provided by the project owner). The app code, committed model, and Kaggle evaluation artifacts are now available on the [main branch](https://github.com/shanmukhdatta/Qintern26/tree/main). [GitHub Actions](https://github.com/shanmukhdatta/Qintern26/actions) passed model smoke testing; hosted-browser inference remains to be independently confirmed.
 
 - [Streamlit application](./app.py) · [Modular model inference](./qtagger/inference.py) · [Deployment instructions](./DEPLOYMENT.md) · [Final Kaggle notebook](./notebooks/QTagger_Plus_Final_Training.ipynb)
 - [Actual evaluation JSON](./models/evaluation_metrics.json) · [Matched metrics CSV](./models/matched_model_metrics.csv) · [Five-row real feature sample](./models/demo_unlabeled_features.csv) · [Kaggle environment](./models/environment.json)
