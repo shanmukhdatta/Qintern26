@@ -2,14 +2,14 @@
 
 The Streamlit application loads the **trusted** model saved by the final Kaggle training notebook.
 
-Copy these files from `qtagger_outputs/malware3/` (or `four_class/`) in the Kaggle ZIP:
+The evaluation files are already present in this folder. Copy the remaining trusted model file from `qtagger_outputs/malware3/` (or `four_class/`) in the Kaggle ZIP:
 
 - `qtagger_v3_1.joblib` **required** (includes label names and all fitted preprocessors)
 - `evaluation_metrics.json` recommended
 - `evaluation.png` recommended
 - `demo_unlabeled_features.csv` recommended
 
-The model is intentionally not bundled with the source-code commit because the uploaded Kaggle ZIP was not accessible to the GitHub editing connector. Do **not** substitute a dummy model.
+The real Kaggle evaluation metrics, package versions, model-comparison CSV and five-row input CSV have been committed from the values supplied by the user. The actual trained \`.joblib\` remains missing because the uploaded ZIP could not be extracted through the available connector. Do **not** substitute a dummy model.
 
 If the model is reasonably small and you have verified its origin, copy it here and run:
 
