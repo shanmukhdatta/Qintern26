@@ -7,7 +7,7 @@ Welcome to the **Qintern'26 — QTagger+** repository. This repository contains 
 
 ## 🧬 QTagger+ interactive demo (Streamlit)
 
-**Deployment status: pending trained-model installation and public URL.** The complete modular Streamlit application and deployment instructions are included in this branch; a public demo link will be added **only after** the Kaggle model is installed and the hosted app is tested.
+**Deployment link:** **[Open the QTagger+ Streamlit application](https://qtagger.streamlit.app/)** (URL provided by the project owner). The trained QSVM v3.1 model is committed to this deployment branch, and the GitHub Actions model smoke test passed. The hosted website and its predictions have not been independently exercised from this documentation update.
 
 - **[Streamlit app source](./app.py)** — upload numerical memory-forensics CSV, predict malware family, inspect evaluation metrics, download results.
 - **[Modular quantum inference](./qtagger/inference.py)** — load saved QSVM v3.1, reproduce train-time preprocessing, rebuild PennyLane circuit and run Nyström + SVM.
@@ -15,9 +15,9 @@ Welcome to the **Qintern'26 — QTagger+** repository. This repository contains 
 - **[Final training notebook](./notebooks/QTagger_Plus_Final_Training.ipynb)** — documented Kaggle-ready training, baseline comparison, model export and reload check.
 - **[Model artifacts guide](./models/README.md)** — required `.joblib`, optional evaluation files and labels.
 
-**Important:** The Kaggle `qtagger_v3_1.joblib` is **not yet committed**; the user's uploaded ZIP could not be inspected by the available repository connector. The app will show an installation notice until the trusted trained model is added. The model bundle contains the class-label mapping, so a separate label pickle is not required.
+**Model artifact:** [`models/qtagger_v3_1.joblib`](./models/qtagger_v3_1.joblib) is committed (99,653 bytes) alongside the Kaggle evaluation metadata and genuine demo-feature CSV. The model bundle includes the class-label mapping, so no separate label pickle is required. Only deserialize trusted model artifacts.
 
-**Local quick start (after installing the model):**
+**Local quick start (with the committed model):**
 
 ```bash
 python -m pip install -r requirements.txt
@@ -31,7 +31,7 @@ This is a **research classifier for pre-extracted numerical memory features**, n
 
 ## 🧬 QTagger+ Interactive Demo — corrected QSVM v3.1
 
-**Deployment status:** Streamlit app code and real Kaggle evaluation artifacts are available on the [deployment branch](https://github.com/shanmukhdatta/Qintern26/tree/qtagger-final-training-notebook). **Live public URL: pending** — the trained `qtagger_v3_1.joblib` must be added and the app deployed on Streamlit Community Cloud. We will not publish an unverified demo URL.
+**Deployment URL:** **[https://qtagger.streamlit.app/](https://qtagger.streamlit.app/)** (provided by the project owner). The app code, committed model, and Kaggle evaluation artifacts are on the [deployment branch](https://github.com/shanmukhdatta/Qintern26/tree/qtagger-final-training-notebook). [GitHub Actions](https://github.com/shanmukhdatta/Qintern26/actions) passed model smoke testing; hosted-browser inference remains to be independently confirmed.
 
 - [Streamlit application](./app.py) · [Modular model inference](./qtagger/inference.py) · [Deployment instructions](./DEPLOYMENT.md) · [Final Kaggle notebook](./notebooks/QTagger_Plus_Final_Training.ipynb)
 - [Actual evaluation JSON](./models/evaluation_metrics.json) · [Matched metrics CSV](./models/matched_model_metrics.csv) · [Five-row real feature sample](./models/demo_unlabeled_features.csv) · [Kaggle environment](./models/environment.json)
@@ -42,7 +42,7 @@ This is a **research classifier for pre-extracted numerical memory features**, n
 - **Inference:** Upload a CSV containing the **complete original numeric feature schema**, not only the selected eight; saved preprocessing reconstructs the quantum inputs.
 - **Environment:** Kaggle Python 3.13.15, NumPy 2.1.3, scikit-learn 1.6.1, PennyLane 0.44.1, joblib 1.6.0.
 
-The live demo will classify **pre-extracted memory-forensics features**; it will not scan binaries or run malware. These metrics are from a limited held-out sample and are not production detection rates. The local similarity may be indefinite; no quantum advantage is claimed.
+The Streamlit app is designed to classify **pre-extracted memory-forensics features**; it does not scan binaries or run malware. These metrics are from a limited held-out sample and are not production detection rates. The local similarity may be indefinite; no quantum advantage is claimed.
 
 ---
 
