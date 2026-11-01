@@ -88,6 +88,28 @@ with tab_predict:
             "from your Kaggle notebook and place it beside the model. "
             "Do not use fabricated all-zero feature vectors as real samples."
         )
+    if sample_path and st.button("▶ Run built-in 5-row Kaggle demo"):
+        try:
+            demo_frame = pd.read_csv(sample_path, low_memory=False)
+            with st.spinner("Running corrected quantum inference on five genuine Kaggle examples..."):
+                demo_labels = predictor.predict(demo_frame)
+            st.success("Demo predictions completed.")
+            st.dataframe(
+                pd.DataFrame({"row": range(1, len(demo_labels) + 1),
+                              "predicted_family": demo_labels}),
+                use_container_width=True, hide_index=True
+            )
+            demo_result = demo_frame.copy()
+            demo_result.insert(0, "predicted_family", demo_labels)
+            st.download_button(
+                "Download demo predictions CSV",
+                data=demo_result.to_csv(index=False).encode("utf-8"),
+                file_name="qtagger_demo_predictions.csv", mime="text/csv",
+            )
+        except Exception as exc:
+            st.error("The built-in demo could not run. Verify model compatibility.")
+            with st.expander("Technical details"):
+                st.code(f"{type(exc).__name__}: {exc}")
     upload = st.file_uploader("Upload numeric memory features (.csv)", type=["csv"])
     if upload is not None:
         if upload.size > MAX_UPLOAD_BYTES:
