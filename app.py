@@ -48,7 +48,7 @@ if path is None:
         "Place the **trusted** Kaggle artifact `qtagger_v3_1.joblib` in "
         "`models/qtagger_v3_1.joblib` and redeploy. Optionally place "
         "`evaluation_metrics.json` and `demo_unlabeled_features.csv` beside it. "
-        "See [deployment instructions](https://github.com/shanmukhdatta/Qintern26/blob/main/DEPLOYMENT.md)."
+        "See [deployment instructions](https://github.com/shanmukhdatta/Qintern26/blob/qtagger-final-training-notebook/DEPLOYMENT.md)."
     )
     st.stop()
 
