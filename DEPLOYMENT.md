@@ -83,9 +83,13 @@ Open the local URL printed by Streamlit. Download the demo input CSV, upload it,
 
 **Deployment cannot be marked successful until a real Kaggle model is present and a prediction succeeds.** If you see "trained model has not been installed," add the verified model and redeploy. If you see a package error, compare installed versions with Kaggle's `environment.json` and adjust `requirements.txt`.
 
-## 5. Add the real public URL to README
+## 5. Public Streamlit URL and deployment verification
 
-Streamlit Community Cloud will assign a URL such as `https://YOUR-APP-NAME.streamlit.app/` **after successful deployment**. Replace the README's **Deployment pending** text with your **actual** URL, not this placeholder.
+- **Project-owner-provided URL:** https://qtagger.streamlit.app/
+- **GitHub status:** The trusted `models/qtagger_v3_1.joblib` has been committed and the GitHub Actions inference smoke test passed.
+- **Runtime status:** Hosting is configured according to the supplied URL, but independent hosted-browser inference has not been confirmed in this documentation update.
+
+Open the hosted application, verify the "Trained model loaded successfully" message, run the built-in five-row Kaggle demo, and confirm it returns predicted labels. If hosted inference fails, inspect Streamlit Cloud logs and this repository's deployment instructions before claiming end-to-end completion.
 
 ## 6. Troubleshooting
 
