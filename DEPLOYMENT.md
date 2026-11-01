@@ -2,6 +2,22 @@
 
 This guide deploys the **corrected QSVM v3.1** trained in `notebooks/QTagger_Plus_Final_Training.ipynb`. No paid hosting is required for a small research demo.
 
+## Browser-only method: upload the previously trained model
+
+The GitHub repository already includes `app.py`, `requirements.txt`, the preprocessing/inference code, real evaluation metrics and a real sample CSV. **Only the trusted trained model is required for the first deployment.**
+
+1. On your computer, download the original `qtagger_v3_1.joblib` artifact that you uploaded to ChatGPT or exported from Kaggle. Do not rename/retrain or substitute another model.
+2. Sign in to GitHub and open [the `models` folder on the deployment branch](https://github.com/shanmukhdatta/Qintern26/tree/qtagger-final-training-notebook/models). Check that the branch selector says `qtagger-final-training-notebook`, **not `main`**.
+3. Select **Add file → Upload files** (in the `models` folder), and drag in **`qtagger_v3_1.joblib`**. At the bottom, write commit message `Add trained QSVM v3.1 model` and commit to the **existing deployment branch**.
+4. Confirm the file is listed at `models/qtagger_v3_1.joblib`. The file is about 100 KB, so GitHub's browser upload limit should not be a problem. GitHub's browser upload bypasses local `.gitignore` staging behavior.
+5. Open [GitHub Actions](https://github.com/shanmukhdatta/Qintern26/actions), inspect the newest **QTagger+ Streamlit checks** run and confirm the real Kaggle model smoke-test step succeeds before publishing. If a step fails, open its logs; do not mark the app validated.
+6. Sign in to [Streamlit Community Cloud](https://share.streamlit.io/), click **Create app → Yup, I have an app**, and choose the repository, branch, file path and Python version as described below. Deploy.
+7. Open the deployed URL, run the built-in demo with real feature values, and confirm it produces class labels. Only then update the README with the **actual** `.streamlit.app` URL.
+
+**Note:** A model uploaded to an earlier ChatGPT conversation may be visible as a Library listing but not authorized for raw-byte transfer to GitHub. In that case, upload the same trusted model file directly in GitHub using the steps above.
+
+---
+
 ## 1. Export your real Kaggle model
 
 After **all notebook cells finish successfully**, Kaggle produces `qtagger_plus_kaggle_artifacts.zip` under `/kaggle/working/qtagger_outputs/`.
