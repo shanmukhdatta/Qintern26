@@ -5,6 +5,30 @@ Welcome to the **Qintern'26 — QTagger+** repository. This repository contains 
 
 ---
 
+## 🧬 QTagger+ interactive demo (Streamlit)
+
+**Deployment status: pending trained-model installation and public URL.** The complete modular Streamlit application and deployment instructions are included in this branch; a public demo link will be added **only after** the Kaggle model is installed and the hosted app is tested.
+
+- **[Streamlit app source](./app.py)** — upload numerical memory-forensics CSV, predict malware family, inspect evaluation metrics, download results.
+- **[Modular quantum inference](./qtagger/inference.py)** — load saved QSVM v3.1, reproduce train-time preprocessing, rebuild PennyLane circuit and run Nyström + SVM.
+- **[Deployment walkthrough](./DEPLOYMENT.md)** — export Kaggle model, validate artifacts, commit, deploy to Streamlit Community Cloud and add the verified live URL.
+- **[Final training notebook](./notebooks/QTagger_Plus_Final_Training.ipynb)** — documented Kaggle-ready training, baseline comparison, model export and reload check.
+- **[Model artifacts guide](./models/README.md)** — required `.joblib`, optional evaluation files and labels.
+
+**Important:** The Kaggle `qtagger_v3_1.joblib` is **not yet committed**; the user's uploaded ZIP could not be inspected by the available repository connector. The app will show an installation notice until the trusted trained model is added. The model bundle contains the class-label mapping, so a separate label pickle is not required.
+
+**Local quick start (after installing the model):**
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/check_model.py --model models/qtagger_v3_1.joblib --sample models/demo_unlabeled_features.csv
+streamlit run app.py
+```
+
+This is a **research classifier for pre-extracted numerical memory features**, not a binary malware scanner. Performance claims must be based on the actual Kaggle evaluation artifacts.
+
+---
+
 ## 📌 Executive Summary & Key Research Takeaways
 
 Across 5 weeks of rigorous empirical research, this project investigated the interplay between **data augmentation** (SMOTE, Borderline-SMOTE, ADASYN, CTGAN, TVAE, QGAN) and **Quantum Machine Learning** (QSVM, VQC) on memory malware datasets (CIC-MalMem-2022 and EMBER 2018).
