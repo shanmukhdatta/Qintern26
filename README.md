@@ -29,6 +29,23 @@ This is a **research classifier for pre-extracted numerical memory features**, n
 
 ---
 
+## 🧬 QTagger+ Interactive Demo — corrected QSVM v3.1
+
+**Deployment status:** Streamlit app code and real Kaggle evaluation artifacts are available on the [deployment branch](https://github.com/shanmukhdatta/Qintern26/tree/qtagger-final-training-notebook). **Live public URL: pending** — the trained `qtagger_v3_1.joblib` must be added and the app deployed on Streamlit Community Cloud. We will not publish an unverified demo URL.
+
+- [Streamlit application](./app.py) · [Modular model inference](./qtagger/inference.py) · [Deployment instructions](./DEPLOYMENT.md) · [Final Kaggle notebook](./notebooks/QTagger_Plus_Final_Training.ipynb)
+- [Actual evaluation JSON](./models/evaluation_metrics.json) · [Matched metrics CSV](./models/matched_model_metrics.csv) · [Five-row real feature sample](./models/demo_unlabeled_features.csv) · [Kaggle environment](./models/environment.json)
+- **Task:** Ransomware / Spyware / Trojan, original CIC-MalMem-2022, seed 7, **300 train / 120 test** subset.
+- **Corrected QSVM v3.1:** **53.33% accuracy**, **0.5336 Macro-F1**, **0.5333 balanced accuracy**.
+- **Classical baselines:** RF on the same 8 features **62.50% accuracy**, **0.6232 Macro-F1**; RBF-SVM on the same 8 features **56.67% accuracy**, **0.5620 Macro-F1**. RF outperformed QSVM on this held-out sample.
+- **Selected features:** `ldrmodules.not_in_load`, `malfind.uniqueInjections`, `ldrmodules.not_in_load_avg`, `malfind.ninjections`, `handles.nsemaphore`, `psxview.not_in_pslist`, `handles.nmutant`, `malfind.commitCharge`.
+- **Inference:** Upload a CSV containing the **complete original numeric feature schema**, not only the selected eight; saved preprocessing reconstructs the quantum inputs.
+- **Environment:** Kaggle Python 3.13.15, NumPy 2.1.3, scikit-learn 1.6.1, PennyLane 0.44.1, joblib 1.6.0.
+
+The live demo will classify **pre-extracted memory-forensics features**; it will not scan binaries or run malware. These metrics are from a limited held-out sample and are not production detection rates. The local similarity may be indefinite; no quantum advantage is claimed.
+
+---
+
 ## 📌 Executive Summary & Key Research Takeaways
 
 Across 5 weeks of rigorous empirical research, this project investigated the interplay between **data augmentation** (SMOTE, Borderline-SMOTE, ADASYN, CTGAN, TVAE, QGAN) and **Quantum Machine Learning** (QSVM, VQC) on memory malware datasets (CIC-MalMem-2022 and EMBER 2018).
