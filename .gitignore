@@ -1,0 +1,18 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+
+# Training datasets and transient results
+qtagger_outputs/
+*.zip
+*.log
+
+# Never commit executable model files from untrusted sources.
+# The verified Kaggle .joblib should be deliberately git-added after local checks.
+models/*.joblib
+models/*.pkl
