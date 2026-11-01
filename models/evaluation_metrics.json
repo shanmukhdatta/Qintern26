@@ -1,0 +1,66 @@
+{
+  "task": "malware3",
+  "seed": 7,
+  "dataset_sha256": "cc7a637a174ffe797e0af0375bce3c09561f0dc8b8115c0a6292718034f5012a",
+  "n_train_subset": 300,
+  "n_test_subset": 120,
+  "n_train_pool": 20144,
+  "n_test_pool": 8643,
+  "classes": [
+    "Ransomware",
+    "Spyware",
+    "Trojan"
+  ],
+  "selected_features": [
+    "ldrmodules.not_in_load",
+    "malfind.uniqueInjections",
+    "ldrmodules.not_in_load_avg",
+    "malfind.ninjections",
+    "handles.nsemaphore",
+    "psxview.not_in_pslist",
+    "handles.nmutant",
+    "malfind.commitCharge"
+  ],
+  "device": "lightning.qubit",
+  "quantum_seconds": 151.757918983,
+  "kta_seconds": 9.263492286000002,
+  "metrics": [
+    {
+      "model": "QSVM v3.1 local",
+      "accuracy": 0.5333333333333333,
+      "macro_f1": 0.5335775335775336,
+      "balanced_accuracy": 0.5333489681050656,
+      "n_train": 300,
+      "n_test": 120
+    },
+    {
+      "model": "RBF-SVM same 8",
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.562015503875969,
+      "balanced_accuracy": 0.5689806128830519,
+      "n_train": 300,
+      "n_test": 120
+    },
+    {
+      "model": "RF same 8",
+      "accuracy": 0.625,
+      "macro_f1": 0.6232193732193733,
+      "balanced_accuracy": 0.626735459662289,
+      "n_train": 300,
+      "n_test": 120
+    },
+    {
+      "model": "RF all filtered",
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.5597385683966815,
+      "balanced_accuracy": 0.5688086303939963,
+      "n_train": 300,
+      "n_test": 120
+    }
+  ],
+  "warnings": [
+    "No test-set tuning",
+    "Local similarity may be indefinite",
+    "Quantum test subset is smaller than full real-data holdout"
+  ]
+}

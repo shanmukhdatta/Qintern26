@@ -1,0 +1,29 @@
+name: QTagger+ Streamlit checks
+on:
+  push:
+    branches: [qtagger-final-training-notebook, main]
+  pull_request:
+    branches: [main]
+jobs:
+  python-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Check syntax
+        run: python -m compileall -q app.py qtagger scripts tests
+      - name: Run inference unit tests
+        run: python -m pytest -q tests/
+
+      - name: Real Kaggle model smoke test (when model artifact is installed)
+        run: |
+          if [ -f models/qtagger_v3_1.joblib ]; then
+            python scripts/check_model.py --model models/qtagger_v3_1.joblib --sample models/demo_unlabeled_features.csv
+          else
+            echo "Model artifact not installed yet; unit tests run independently."
+          fi
